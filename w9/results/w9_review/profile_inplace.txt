@@ -1,0 +1,34 @@
+USDT:2026-11-04 01:03:48 7154:7154 SyncActivityProfilerHandler.cpp:52] profiler_start
+USDT:2026-11-04 01:03:48 7154:7154 SyncActivityProfilerHandler.cpp:59] profiler_stop
+-------------------------------------------------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  
+                                                   Name    Self CPU %      Self CPU   CPU total %     CPU total  CPU time avg     Self CUDA   Self CUDA %    CUDA total  CUDA time avg    # of Calls  
+-------------------------------------------------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  
+                                              aten::bmm        16.13%     632.296us        72.24%       2.831ms       1.416ms     252.438us        48.30%     335.264us     167.632us             2  
+                                      02_scale_and_mask         0.00%       0.000us         0.00%       0.000us       0.000us     185.009us        35.40%     185.009us     185.009us             1  
+                                ampere_sgemm_128x128_nn         0.00%       0.000us         0.00%       0.000us       0.000us     169.612us        32.45%     169.612us     169.612us             1  
+                                           04_av_matmul         0.00%       0.000us         0.00%       0.000us       0.000us     169.612us        32.45%     169.612us     169.612us             1  
+                                              aten::div         1.02%      40.067us         1.65%      64.578us      64.578us     131.395us        25.14%     131.395us     131.395us             1  
+void at::native::vectorized_elementwise_kernel<4, at...         0.00%       0.000us         0.00%       0.000us       0.000us     131.395us        25.14%     131.395us     131.395us             1  
+                                         aten::_softmax         0.36%      14.192us         0.62%      24.379us      24.379us      86.463us        16.54%      86.463us      86.463us             1  
+void (anonymous namespace)::softmax_warp_forward<flo...         0.00%       0.000us         0.00%       0.000us       0.000us      86.463us        16.54%      86.463us      86.463us             1  
+                                             03_softmax         0.00%       0.000us         0.00%       0.000us       0.000us      86.463us        16.54%      86.463us      86.463us             1  
+                                Activity Buffer Request        51.90%       2.034ms        51.90%       2.034ms       2.034ms      82.826us        15.85%      82.826us      82.826us             1  
+                                ampere_sgemm_128x128_tn         0.00%       0.000us         0.00%       0.000us       0.000us      82.826us        15.85%      82.826us      82.826us             1  
+                                           01_qk_matmul         0.00%       0.000us         0.00%       0.000us       0.000us      82.826us        15.85%      82.826us      82.826us             1  
+                                     aten::masked_fill_         2.41%      94.591us         2.92%     114.418us     114.418us      52.324us        10.01%      52.324us      52.324us             1  
+void at::native::elementwise_kernel<128, 2, at::nati...         0.00%       0.000us         0.00%       0.000us       0.000us      52.324us        10.01%      52.324us      52.324us             1  
+                                           01_qk_matmul         2.16%      84.665us        74.14%       2.906ms       2.906ms       0.000us         0.00%     165.652us     165.652us             1  
+                                        aten::transpose         0.57%      22.259us         0.70%      27.325us      27.325us       0.000us         0.00%       0.000us       0.000us             1  
+                                       aten::as_strided         0.24%       9.439us         0.24%       9.439us       1.573us       0.000us         0.00%       0.000us       0.000us             6  
+                                           aten::matmul         0.99%      38.633us        75.01%       2.940ms       1.470ms       0.000us         0.00%     335.264us     167.632us             2  
+                                           aten::expand         0.37%      14.313us         0.48%      18.686us       3.737us       0.000us         0.00%       0.000us       0.000us             5  
+                                          aten::reshape         0.26%      10.368us         1.19%      46.652us      11.663us       0.000us         0.00%       0.000us       0.000us             4  
+                                             aten::view         0.87%      33.994us         0.87%      33.994us      11.331us       0.000us         0.00%       0.000us       0.000us             3  
+                                   aten::_reshape_alias         0.06%       2.290us         0.06%       2.290us       2.290us       0.000us         0.00%       0.000us       0.000us             1  
+                                       cudaLaunchKernel         5.46%     214.115us         5.46%     214.115us      42.823us       0.000us         0.00%       0.000us       0.000us             5  
+                                     aten::_unsafe_view         0.25%       9.990us         0.25%       9.990us       4.995us       0.000us         0.00%       0.000us       0.000us             2  
+                                      02_scale_and_mask         3.15%     123.498us         7.72%     302.494us     302.494us       0.000us         0.00%     183.719us     183.719us             1  
+-------------------------------------------------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  
+Self CPU time total: 3.919ms
+Self CUDA time total: 522.620us
+

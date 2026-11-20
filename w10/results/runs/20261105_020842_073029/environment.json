@@ -1,0 +1,24 @@
+{
+  "timestamp": "2026-11-05T02:08:42.073029+08:00",
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "platform": "Linux-6.6.114.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "torch": "2.13.0+cu132",
+  "triton": "3.7.1",
+  "cuda": "13.2",
+  "gpu": "NVIDIA GeForce RTX 4080 Laptop GPU",
+  "memory_bytes": 12878086144,
+  "capability": [
+    8,
+    9
+  ],
+  "seed": 42,
+  "suite": "vector_add",
+  "command": [
+    "vector_add.py"
+  ],
+  "source_sha256": {
+    "softmax.py": "b291e8af2f4191f9a0a905ef9a4a888df3b2c4754293a5ff4b467f2d14efafcc",
+    "vector_add.py": "585f78a53224a9b9eed0c88ffde3fac0f3fb9a4dfcbcdf959fee8c2630cabd31",
+    "run_experiments.py": "c568def0a6288d14aa98cd63247626f1afdb145d69b44ff8b8f8d8e2f068d713"
+  }
+}

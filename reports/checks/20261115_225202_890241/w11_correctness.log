@@ -1,0 +1,36 @@
+PASS random_or_empty (1, 1) torch.float32
+PASS random_or_empty (2, 3) torch.float32
+PASS random_or_empty (3, 5) torch.float32
+PASS random_or_empty (7, 255) torch.float32
+PASS random_or_empty (7, 256) torch.float32
+PASS random_or_empty (7, 257) torch.float32
+PASS random_or_empty (32, 1000) torch.float32
+PASS random_or_empty (16, 4096) torch.float32
+PASS random_or_empty (1024, 257) torch.float32
+PASS random_or_empty (0, 5) torch.float32
+PASS large_shift (2, 3) torch.float32
+PASS negative (1, 5) torch.float32
+PASS equal (2, 5) torch.float32
+PASS extreme_finite (2, 3) torch.float32
+PASS random_or_empty (1, 1) torch.float16
+PASS random_or_empty (2, 3) torch.float16
+PASS random_or_empty (3, 5) torch.float16
+PASS random_or_empty (7, 255) torch.float16
+PASS random_or_empty (7, 256) torch.float16
+PASS random_or_empty (7, 257) torch.float16
+PASS random_or_empty (32, 1000) torch.float16
+PASS random_or_empty (16, 4096) torch.float16
+PASS random_or_empty (1024, 257) torch.float16
+PASS random_or_empty (0, 5) torch.float16
+PASS large_shift (2, 3) torch.float16
+PASS negative (1, 5) torch.float16
+PASS equal (2, 5) torch.float16
+PASS extreme_finite (2, 3) torch.float16
+PASS zero_width (2, 0) torch.float32
+PASS too_wide (2, 4097) torch.float32
+PASS noncontiguous (5, 3) torch.float32
+PASS one_dimensional (5,) torch.float32
+PASS cpu (3, 5) torch.float32
+PASS float64 (3, 5) torch.float64
+{"total": 34, "passed": 34, "failed": 0} 
+Evidence: /home/administrator/ai-infra/cuda_learning/w11/results/correctness/20261115_225218_899297

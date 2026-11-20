@@ -1,0 +1,1636 @@
+[
+  {
+    "M": 4096,
+    "N": 128,
+    "provider": "torch",
+    "trace": "trace_4096x128_torch.json",
+    "kernels": [
+      {
+        "name": "void (anonymous namespace)::softmax_warp_forward<float, float, float, 7, false, false, 32>(float*, float const*, int, int, int, bool const*, int, bool)",
+        "grid": [
+          512,
+          1,
+          1
+        ],
+        "block": [
+          32,
+          4,
+          1
+        ],
+        "registers per thread": 30,
+        "shared memory": 0,
+        "occupancy": {
+          "activeBlocksPerMultiprocessor": 12,
+          "limitingFactors": "WARPS",
+          "blockLimitRegs": 16,
+          "blockLimitSharedMem": 100,
+          "blockLimitWarps": 12,
+          "blockLimitBlocks": 24,
+          "blockLimitBarriers": 2147483647,
+          "allocatedRegistersPerBlock": 4096,
+          "allocatedSharedMemPerBlock": 1024
+        }
+      },
+      {
+        "name": "void (anonymous namespace)::softmax_warp_forward<float, float, float, 7, false, false, 32>(float*, float const*, int, int, int, bool const*, int, bool)",
+        "grid": [
+          512,
+          1,
+          1
+        ],
+        "block": [
+          32,
+          4,
+          1
+        ],
+        "registers per thread": 30,
+        "shared memory": 0,
+        "occupancy": {
+          "activeBlocksPerMultiprocessor": 12,
+          "limitingFactors": "WARPS",
+          "blockLimitRegs": 16,
+          "blockLimitSharedMem": 100,
+          "blockLimitWarps": 12,
+          "blockLimitBlocks": 24,
+          "blockLimitBarriers": 2147483647,
+          "allocatedRegistersPerBlock": 4096,
+          "allocatedSharedMemPerBlock": 1024
+        }
+      },
+      {
+        "name": "void (anonymous namespace)::softmax_warp_forward<float, float, float, 7, false, false, 32>(float*, float const*, int, int, int, bool const*, int, bool)",
+        "grid": [
+          512,
+          1,
+          1
+        ],
+        "block": [
+          32,
+          4,
+          1
+        ],
+        "registers per thread": 30,
+        "shared memory": 0,
+        "occupancy": {
+          "activeBlocksPerMultiprocessor": 12,
+          "limitingFactors": "WARPS",
+          "blockLimitRegs": 16,
+          "blockLimitSharedMem": 100,
+          "blockLimitWarps": 12,
+          "blockLimitBlocks": 24,
+          "blockLimitBarriers": 2147483647,
+          "allocatedRegistersPerBlock": 4096,
+          "allocatedSharedMemPerBlock": 1024
+        }
+      }
+    ]
+  },
+  {
+    "M": 4096,
+    "N": 128,
+    "provider": "triton4",
+    "trace": "trace_4096x128_triton4.json",
+    "kernels": [
+      {
+        "name": "softmax_kernel",
+        "grid": [
+          4096,
+          1,
+          1
+        ],
+        "block": [
+          128,
+          1,
+          1
+        ],
+        "registers per thread": 16,
+        "shared memory": 16,
+        "occupancy": {
+          "activeBlocksPerMultiprocessor": 12,
+          "limitingFactors": "WARPS",
+          "blockLimitRegs": 32,
+          "blockLimitSharedMem": 88,
+          "blockLimitWarps": 12,
+          "blockLimitBlocks": 24,
+          "blockLimitBarriers": 2147483647,
+          "allocatedRegistersPerBlock": 2048,
+          "allocatedSharedMemPerBlock": 1152
+        }
+      },
+      {
+        "name": "softmax_kernel",
+        "grid": [
+          4096,
+          1,
+          1
+        ],
+        "block": [
+          128,
+          1,
+          1
+        ],
+        "registers per thread": 16,
+        "shared memory": 16,
+        "occupancy": {
+          "activeBlocksPerMultiprocessor": 12,
+          "limitingFactors": "WARPS",
+          "blockLimitRegs": 32,
+          "blockLimitSharedMem": 88,
+          "blockLimitWarps": 12,
+          "blockLimitBlocks": 24,
+          "blockLimitBarriers": 2147483647,
+          "allocatedRegistersPerBlock": 2048,
+          "allocatedSharedMemPerBlock": 1152
+        }
+      },
+      {
+        "name": "softmax_kernel",
+        "grid": [
+          4096,
+          1,
+          1
+        ],
+        "block": [
+          128,
+          1,
+          1
+        ],
+        "registers per thread": 16,
+        "shared memory": 16,
+        "occupancy": {
+          "activeBlocksPerMultiprocessor": 12,
+          "limitingFactors": "WARPS",
+          "blockLimitRegs": 32,
+          "blockLimitSharedMem": 88,
+          "blockLimitWarps": 12,
+          "blockLimitBlocks": 24,
+          "blockLimitBarriers": 2147483647,
+          "allocatedRegistersPerBlock": 2048,
+          "allocatedSharedMemPerBlock": 1152
+        }
+      }
+    ]
+  },
+  {
+    "M": 1024,
+    "N": 1000,
+    "provider": "torch",
+    "trace": "trace_1024x1000_torch.json",
+    "kernels": [
+      {
+        "name": "void (anonymous namespace)::softmax_warp_forward<float, float, float, 10, false, false, 32>(float*, float const*, int, int, int, bool const*, int, bool)",
+        "grid": [
+          256,
+          1,
+          1
+        ],
+        "block": [
+          32,
+          4,
+          1
+        ],
+        "registers per thread": 48,
+        "shared memory": 0,
+        "occupancy": {
+          "activeBlocksPerMultiprocessor": 10,
+          "limitingFactors": "REGS",
+          "blockLimitRegs": 10,
+          "blockLimitSharedMem": 100,
+          "blockLimitWarps": 12,
+          "blockLimitBlocks": 24,
+          "blockLimitBarriers": 2147483647,
+          "allocatedRegistersPerBlock": 6144,
+          "allocatedSharedMemPerBlock": 1024
+        }
+      },
+      {
+        "name": "void (anonymous namespace)::softmax_warp_forward<float, float, float, 10, false, false, 32>(float*, float const*, int, int, int, bool const*, int, bool)",
+        "grid": [
+          256,
+          1,
+          1
+        ],
+        "block": [
+          32,
+          4,
+          1
+        ],
+        "registers per thread": 48,
+        "shared memory": 0,
+        "occupancy": {
+          "activeBlocksPerMultiprocessor": 10,
+          "limitingFactors": "REGS",
+          "blockLimitRegs": 10,
+          "blockLimitSharedMem": 100,
+          "blockLimitWarps": 12,
+          "blockLimitBlocks": 24,
+          "blockLimitBarriers": 2147483647,
+          "allocatedRegistersPerBlock": 6144,
+          "allocatedSharedMemPerBlock": 1024
+        }
+      },
+      {
+        "name": "void (anonymous namespace)::softmax_warp_forward<float, float, float, 10, false, false, 32>(float*, float const*, int, int, int, bool const*, int, bool)",
+        "grid": [
+          256,
+          1,
+          1
+        ],
+        "block": [
+          32,
+          4,
+          1
+        ],
+        "registers per thread": 48,
+        "shared memory": 0,
+        "occupancy": {
+          "activeBlocksPerMultiprocessor": 10,
+          "limitingFactors": "REGS",
+          "blockLimitRegs": 10,
+          "blockLimitSharedMem": 100,
+          "blockLimitWarps": 12,
+          "blockLimitBlocks": 24,
+          "blockLimitBarriers": 2147483647,
+          "allocatedRegistersPerBlock": 6144,
+          "allocatedSharedMemPerBlock": 1024
+        }
+      }
+    ]
+  },
+  {
+    "M": 1024,
+    "N": 1000,
+    "provider": "triton4",
+    "trace": "trace_1024x1000_triton4.json",
+    "kernels": [
+      {
+        "name": "softmax_kernel",
+        "grid": [
+          1024,
+          1,
+          1
+        ],
+        "block": [
+          128,
+          1,
+          1
+        ],
+        "registers per thread": 28,
+        "shared memory": 16,
+        "occupancy": {
+          "activeBlocksPerMultiprocessor": 12,
+          "limitingFactors": "WARPS",
+          "blockLimitRegs": 16,
+          "blockLimitSharedMem": 88,
+          "blockLimitWarps": 12,
+          "blockLimitBlocks": 24,
+          "blockLimitBarriers": 2147483647,
+          "allocatedRegistersPerBlock": 4096,
+          "allocatedSharedMemPerBlock": 1152
+        }
+      },
+      {
+        "name": "softmax_kernel",
+        "grid": [
+          1024,
+          1,
+          1
+        ],
+        "block": [
+          128,
+          1,
+          1
+        ],
+        "registers per thread": 28,
+        "shared memory": 16,
+        "occupancy": {
+          "activeBlocksPerMultiprocessor": 12,
+          "limitingFactors": "WARPS",
+          "blockLimitRegs": 16,
+          "blockLimitSharedMem": 88,
+          "blockLimitWarps": 12,
+          "blockLimitBlocks": 24,
+          "blockLimitBarriers": 2147483647,
+          "allocatedRegistersPerBlock": 4096,
+          "allocatedSharedMemPerBlock": 1152
+        }
+      },
+      {
+        "name": "softmax_kernel",
+        "grid": [
+          1024,
+          1,
+          1
+        ],
+        "block": [
+          128,
+          1,
+          1
+        ],
+        "registers per thread": 28,
+        "shared memory": 16,
+        "occupancy": {
+          "activeBlocksPerMultiprocessor": 12,
+          "limitingFactors": "WARPS",
+          "blockLimitRegs": 16,
+          "blockLimitSharedMem": 88,
+          "blockLimitWarps": 12,
+          "blockLimitBlocks": 24,
+          "blockLimitBarriers": 2147483647,
+          "allocatedRegistersPerBlock": 4096,
+          "allocatedSharedMemPerBlock": 1152
+        }
+      }
+    ]
+  },
+  {
+    "M": 1024,
+    "N": 4096,
+    "provider": "torch",
+    "trace": "trace_1024x4096_torch.json",
+    "kernels": [
+      {
+        "name": "void at::native::(anonymous namespace)::cunn_SoftMaxForwardReg<float, float, float, at::native::(anonymous namespace)::SoftMaxForwardEpilogue, long, 4>(float*, float const*, long)",
+        "grid": [
+          1024,
+          1,
+          1
+        ],
+        "block": [
+          1024,
+          1,
+          1
+        ],
+        "registers per thread": 30,
+        "shared memory": 128,
+        "occupancy": {
+          "activeBlocksPerMultiprocessor": 1,
+          "limitingFactors": "WARPS",
+          "blockLimitRegs": 2,
+          "blockLimitSharedMem": 88,
+          "blockLimitWarps": 1,
+          "blockLimitBlocks": 24,
+          "blockLimitBarriers": 2147483647,
+          "allocatedRegistersPerBlock": 32768,
+          "allocatedSharedMemPerBlock": 1152
+        }
+      },
+      {
+        "name": "void at::native::(anonymous namespace)::cunn_SoftMaxForwardReg<float, float, float, at::native::(anonymous namespace)::SoftMaxForwardEpilogue, long, 4>(float*, float const*, long)",
+        "grid": [
+          1024,
+          1,
+          1
+        ],
+        "block": [
+          1024,
+          1,
+          1
+        ],
+        "registers per thread": 30,
+        "shared memory": 128,
+        "occupancy": {
+          "activeBlocksPerMultiprocessor": 1,
+          "limitingFactors": "WARPS",
+          "blockLimitRegs": 2,
+          "blockLimitSharedMem": 88,
+          "blockLimitWarps": 1,
+          "blockLimitBlocks": 24,
+          "blockLimitBarriers": 2147483647,
+          "allocatedRegistersPerBlock": 32768,
+          "allocatedSharedMemPerBlock": 1152
+        }
+      },
+      {
+        "name": "void at::native::(anonymous namespace)::cunn_SoftMaxForwardReg<float, float, float, at::native::(anonymous namespace)::SoftMaxForwardEpilogue, long, 4>(float*, float const*, long)",
+        "grid": [
+          1024,
+          1,
+          1
+        ],
+        "block": [
+          1024,
+          1,
+          1
+        ],
+        "registers per thread": 30,
+        "shared memory": 128,
+        "occupancy": {
+          "activeBlocksPerMultiprocessor": 1,
+          "limitingFactors": "WARPS",
+          "blockLimitRegs": 2,
+          "blockLimitSharedMem": 88,
+          "blockLimitWarps": 1,
+          "blockLimitBlocks": 24,
+          "blockLimitBarriers": 2147483647,
+          "allocatedRegistersPerBlock": 32768,
+          "allocatedSharedMemPerBlock": 1152
+        }
+      }
+    ]
+  },
+  {
+    "M": 1024,
+    "N": 4096,
+    "provider": "triton4",
+    "trace": "trace_1024x4096_triton4.json",
+    "kernels": [
+      {
+        "name": "softmax_kernel",
+        "grid": [
+          1024,
+          1,
+          1
+        ],
+        "block": [
+          128,
+          1,
+          1
+        ],
+        "registers per thread": 54,
+        "shared memory": 16,
+        "occupancy": {
+          "activeBlocksPerMultiprocessor": 9,
+          "limitingFactors": "REGS",
+          "blockLimitRegs": 9,
+          "blockLimitSharedMem": 88,
+          "blockLimitWarps": 12,
+          "blockLimitBlocks": 24,
+          "blockLimitBarriers": 2147483647,
+          "allocatedRegistersPerBlock": 7168,
+          "allocatedSharedMemPerBlock": 1152
+        }
+      },
+      {
+        "name": "softmax_kernel",
+        "grid": [
+          1024,
+          1,
+          1
+        ],
+        "block": [
+          128,
+          1,
+          1
+        ],
+        "registers per thread": 54,
+        "shared memory": 16,
+        "occupancy": {
+          "activeBlocksPerMultiprocessor": 9,
+          "limitingFactors": "REGS",
+          "blockLimitRegs": 9,
+          "blockLimitSharedMem": 88,
+          "blockLimitWarps": 12,
+          "blockLimitBlocks": 24,
+          "blockLimitBarriers": 2147483647,
+          "allocatedRegistersPerBlock": 7168,
+          "allocatedSharedMemPerBlock": 1152
+        }
+      },
+      {
+        "name": "softmax_kernel",
+        "grid": [
+          1024,
+          1,
+          1
+        ],
+        "block": [
+          128,
+          1,
+          1
+        ],
+        "registers per thread": 54,
+        "shared memory": 16,
+        "occupancy": {
+          "activeBlocksPerMultiprocessor": 9,
+          "limitingFactors": "REGS",
+          "blockLimitRegs": 9,
+          "blockLimitSharedMem": 88,
+          "blockLimitWarps": 12,
+          "blockLimitBlocks": 24,
+          "blockLimitBarriers": 2147483647,
+          "allocatedRegistersPerBlock": 7168,
+          "allocatedSharedMemPerBlock": 1152
+        }
+      }
+    ]
+  },
+  {
+    "M": 1024,
+    "N": 4096,
+    "provider": "triton8",
+    "trace": "trace_1024x4096_triton8.json",
+    "kernels": [
+      {
+        "name": "softmax_kernel",
+        "grid": [
+          1024,
+          1,
+          1
+        ],
+        "block": [
+          256,
+          1,
+          1
+        ],
+        "registers per thread": 34,
+        "shared memory": 32,
+        "occupancy": {
+          "activeBlocksPerMultiprocessor": 6,
+          "limitingFactors": "WARPS|REGS",
+          "blockLimitRegs": 6,
+          "blockLimitSharedMem": 88,
+          "blockLimitWarps": 6,
+          "blockLimitBlocks": 24,
+          "blockLimitBarriers": 2147483647,
+          "allocatedRegistersPerBlock": 10240,
+          "allocatedSharedMemPerBlock": 1152
+        }
+      },
+      {
+        "name": "softmax_kernel",
+        "grid": [
+          1024,
+          1,
+          1
+        ],
+        "block": [
+          256,
+          1,
+          1
+        ],
+        "registers per thread": 34,
+        "shared memory": 32,
+        "occupancy": {
+          "activeBlocksPerMultiprocessor": 6,
+          "limitingFactors": "WARPS|REGS",
+          "blockLimitRegs": 6,
+          "blockLimitSharedMem": 88,
+          "blockLimitWarps": 6,
+          "blockLimitBlocks": 24,
+          "blockLimitBarriers": 2147483647,
+          "allocatedRegistersPerBlock": 10240,
+          "allocatedSharedMemPerBlock": 1152
+        }
+      },
+      {
+        "name": "softmax_kernel",
+        "grid": [
+          1024,
+          1,
+          1
+        ],
+        "block": [
+          256,
+          1,
+          1
+        ],
+        "registers per thread": 34,
+        "shared memory": 32,
+        "occupancy": {
+          "activeBlocksPerMultiprocessor": 6,
+          "limitingFactors": "WARPS|REGS",
+          "blockLimitRegs": 6,
+          "blockLimitSharedMem": 88,
+          "blockLimitWarps": 6,
+          "blockLimitBlocks": 24,
+          "blockLimitBarriers": 2147483647,
+          "allocatedRegistersPerBlock": 10240,
+          "allocatedSharedMemPerBlock": 1152
+        }
+      }
+    ]
+  },
+  {
+    "M": 1024,
+    "N": 4096,
+    "provider": "triton16",
+    "trace": "trace_1024x4096_triton16.json",
+    "kernels": [
+      {
+        "name": "softmax_kernel",
+        "grid": [
+          1024,
+          1,
+          1
+        ],
+        "block": [
+          512,
+          1,
+          1
+        ],
+        "registers per thread": 25,
+        "shared memory": 64,
+        "occupancy": {
+          "activeBlocksPerMultiprocessor": 3,
+          "limitingFactors": "WARPS",
+          "blockLimitRegs": 4,
+          "blockLimitSharedMem": 88,
+          "blockLimitWarps": 3,
+          "blockLimitBlocks": 24,
+          "blockLimitBarriers": 2147483647,
+          "allocatedRegistersPerBlock": 16384,
+          "allocatedSharedMemPerBlock": 1152
+        }
+      },
+      {
+        "name": "softmax_kernel",
+        "grid": [
+          1024,
+          1,
+          1
+        ],
+        "block": [
+          512,
+          1,
+          1
+        ],
+        "registers per thread": 25,
+        "shared memory": 64,
+        "occupancy": {
+          "activeBlocksPerMultiprocessor": 3,
+          "limitingFactors": "WARPS",
+          "blockLimitRegs": 4,
+          "blockLimitSharedMem": 88,
+          "blockLimitWarps": 3,
+          "blockLimitBlocks": 24,
+          "blockLimitBarriers": 2147483647,
+          "allocatedRegistersPerBlock": 16384,
+          "allocatedSharedMemPerBlock": 1152
+        }
+      },
+      {
+        "name": "softmax_kernel",
+        "grid": [
+          1024,
+          1,
+          1
+        ],
+        "block": [
+          512,
+          1,
+          1
+        ],
+        "registers per thread": 25,
+        "shared memory": 64,
+        "occupancy": {
+          "activeBlocksPerMultiprocessor": 3,
+          "limitingFactors": "WARPS",
+          "blockLimitRegs": 4,
+          "blockLimitSharedMem": 88,
+          "blockLimitWarps": 3,
+          "blockLimitBlocks": 24,
+          "blockLimitBarriers": 2147483647,
+          "allocatedRegistersPerBlock": 16384,
+          "allocatedSharedMemPerBlock": 1152
+        }
+      }
+    ]
+  },
+  {
+    "M": 1024,
+    "N": 4096,
+    "provider": "triton32",
+    "trace": "trace_1024x4096_triton32.json",
+    "kernels": [
+      {
+        "name": "softmax_kernel",
+        "grid": [
+          1024,
+          1,
+          1
+        ],
+        "block": [
+          1024,
+          1,
+          1
+        ],
+        "registers per thread": 22,
+        "shared memory": 128,
+        "occupancy": {
+          "activeBlocksPerMultiprocessor": 1,
+          "limitingFactors": "WARPS",
+          "blockLimitRegs": 2,
+          "blockLimitSharedMem": 88,
+          "blockLimitWarps": 1,
+          "blockLimitBlocks": 24,
+          "blockLimitBarriers": 2147483647,
+          "allocatedRegistersPerBlock": 24576,
+          "allocatedSharedMemPerBlock": 1152
+        }
+      },
+      {
+        "name": "softmax_kernel",
+        "grid": [
+          1024,
+          1,
+          1
+        ],
+        "block": [
+          1024,
+          1,
+          1
+        ],
+        "registers per thread": 22,
+        "shared memory": 128,
+        "occupancy": {
+          "activeBlocksPerMultiprocessor": 1,
+          "limitingFactors": "WARPS",
+          "blockLimitRegs": 2,
+          "blockLimitSharedMem": 88,
+          "blockLimitWarps": 1,
+          "blockLimitBlocks": 24,
+          "blockLimitBarriers": 2147483647,
+          "allocatedRegistersPerBlock": 24576,
+          "allocatedSharedMemPerBlock": 1152
+        }
+      },
+      {
+        "name": "softmax_kernel",
+        "grid": [
+          1024,
+          1,
+          1
+        ],
+        "block": [
+          1024,
+          1,
+          1
+        ],
+        "registers per thread": 22,
+        "shared memory": 128,
+        "occupancy": {
+          "activeBlocksPerMultiprocessor": 1,
+          "limitingFactors": "WARPS",
+          "blockLimitRegs": 2,
+          "blockLimitSharedMem": 88,
+          "blockLimitWarps": 1,
+          "blockLimitBlocks": 24,
+          "blockLimitBarriers": 2147483647,
+          "allocatedRegistersPerBlock": 24576,
+          "allocatedSharedMemPerBlock": 1152
+        }
+      }
+    ]
+  },
+  {
+    "M": 32,
+    "N": 128,
+    "provider": "torch",
+    "trace": "trace_32x128_torch.json",
+    "kernels": [
+      {
+        "name": "void (anonymous namespace)::softmax_warp_forward<float, float, float, 7, false, false, 32>(float*, float const*, int, int, int, bool const*, int, bool)",
+        "grid": [
+          4,
+          1,
+          1
+        ],
+        "block": [
+          32,
+          4,
+          1
+        ],
+        "registers per thread": 30,
+        "shared memory": 0,
+        "occupancy": {
+          "activeBlocksPerMultiprocessor": 12,
+          "limitingFactors": "WARPS",
+          "blockLimitRegs": 16,
+          "blockLimitSharedMem": 100,
+          "blockLimitWarps": 12,
+          "blockLimitBlocks": 24,
+          "blockLimitBarriers": 2147483647,
+          "allocatedRegistersPerBlock": 4096,
+          "allocatedSharedMemPerBlock": 1024
+        }
+      },
+      {
+        "name": "void (anonymous namespace)::softmax_warp_forward<float, float, float, 7, false, false, 32>(float*, float const*, int, int, int, bool const*, int, bool)",
+        "grid": [
+          4,
+          1,
+          1
+        ],
+        "block": [
+          32,
+          4,
+          1
+        ],
+        "registers per thread": 30,
+        "shared memory": 0,
+        "occupancy": {
+          "activeBlocksPerMultiprocessor": 12,
+          "limitingFactors": "WARPS",
+          "blockLimitRegs": 16,
+          "blockLimitSharedMem": 100,
+          "blockLimitWarps": 12,
+          "blockLimitBlocks": 24,
+          "blockLimitBarriers": 2147483647,
+          "allocatedRegistersPerBlock": 4096,
+          "allocatedSharedMemPerBlock": 1024
+        }
+      },
+      {
+        "name": "void (anonymous namespace)::softmax_warp_forward<float, float, float, 7, false, false, 32>(float*, float const*, int, int, int, bool const*, int, bool)",
+        "grid": [
+          4,
+          1,
+          1
+        ],
+        "block": [
+          32,
+          4,
+          1
+        ],
+        "registers per thread": 30,
+        "shared memory": 0,
+        "occupancy": {
+          "activeBlocksPerMultiprocessor": 12,
+          "limitingFactors": "WARPS",
+          "blockLimitRegs": 16,
+          "blockLimitSharedMem": 100,
+          "blockLimitWarps": 12,
+          "blockLimitBlocks": 24,
+          "blockLimitBarriers": 2147483647,
+          "allocatedRegistersPerBlock": 4096,
+          "allocatedSharedMemPerBlock": 1024
+        }
+      }
+    ]
+  },
+  {
+    "M": 32,
+    "N": 128,
+    "provider": "triton4",
+    "trace": "trace_32x128_triton4.json",
+    "kernels": [
+      {
+        "name": "softmax_kernel",
+        "grid": [
+          32,
+          1,
+          1
+        ],
+        "block": [
+          128,
+          1,
+          1
+        ],
+        "registers per thread": 16,
+        "shared memory": 16,
+        "occupancy": {
+          "activeBlocksPerMultiprocessor": 12,
+          "limitingFactors": "WARPS",
+          "blockLimitRegs": 32,
+          "blockLimitSharedMem": 88,
+          "blockLimitWarps": 12,
+          "blockLimitBlocks": 24,
+          "blockLimitBarriers": 2147483647,
+          "allocatedRegistersPerBlock": 2048,
+          "allocatedSharedMemPerBlock": 1152
+        }
+      },
+      {
+        "name": "softmax_kernel",
+        "grid": [
+          32,
+          1,
+          1
+        ],
+        "block": [
+          128,
+          1,
+          1
+        ],
+        "registers per thread": 16,
+        "shared memory": 16,
+        "occupancy": {
+          "activeBlocksPerMultiprocessor": 12,
+          "limitingFactors": "WARPS",
+          "blockLimitRegs": 32,
+          "blockLimitSharedMem": 88,
+          "blockLimitWarps": 12,
+          "blockLimitBlocks": 24,
+          "blockLimitBarriers": 2147483647,
+          "allocatedRegistersPerBlock": 2048,
+          "allocatedSharedMemPerBlock": 1152
+        }
+      },
+      {
+        "name": "softmax_kernel",
+        "grid": [
+          32,
+          1,
+          1
+        ],
+        "block": [
+          128,
+          1,
+          1
+        ],
+        "registers per thread": 16,
+        "shared memory": 16,
+        "occupancy": {
+          "activeBlocksPerMultiprocessor": 12,
+          "limitingFactors": "WARPS",
+          "blockLimitRegs": 32,
+          "blockLimitSharedMem": 88,
+          "blockLimitWarps": 12,
+          "blockLimitBlocks": 24,
+          "blockLimitBarriers": 2147483647,
+          "allocatedRegistersPerBlock": 2048,
+          "allocatedSharedMemPerBlock": 1152
+        }
+      }
+    ]
+  },
+  {
+    "M": 32,
+    "N": 4096,
+    "provider": "torch",
+    "trace": "trace_32x4096_torch.json",
+    "kernels": [
+      {
+        "name": "void at::native::(anonymous namespace)::cunn_SoftMaxForwardReg<float, float, float, at::native::(anonymous namespace)::SoftMaxForwardEpilogue, long, 4>(float*, float const*, long)",
+        "grid": [
+          32,
+          1,
+          1
+        ],
+        "block": [
+          1024,
+          1,
+          1
+        ],
+        "registers per thread": 30,
+        "shared memory": 128,
+        "occupancy": {
+          "activeBlocksPerMultiprocessor": 1,
+          "limitingFactors": "WARPS",
+          "blockLimitRegs": 2,
+          "blockLimitSharedMem": 88,
+          "blockLimitWarps": 1,
+          "blockLimitBlocks": 24,
+          "blockLimitBarriers": 2147483647,
+          "allocatedRegistersPerBlock": 32768,
+          "allocatedSharedMemPerBlock": 1152
+        }
+      },
+      {
+        "name": "void at::native::(anonymous namespace)::cunn_SoftMaxForwardReg<float, float, float, at::native::(anonymous namespace)::SoftMaxForwardEpilogue, long, 4>(float*, float const*, long)",
+        "grid": [
+          32,
+          1,
+          1
+        ],
+        "block": [
+          1024,
+          1,
+          1
+        ],
+        "registers per thread": 30,
+        "shared memory": 128,
+        "occupancy": {
+          "activeBlocksPerMultiprocessor": 1,
+          "limitingFactors": "WARPS",
+          "blockLimitRegs": 2,
+          "blockLimitSharedMem": 88,
+          "blockLimitWarps": 1,
+          "blockLimitBlocks": 24,
+          "blockLimitBarriers": 2147483647,
+          "allocatedRegistersPerBlock": 32768,
+          "allocatedSharedMemPerBlock": 1152
+        }
+      },
+      {
+        "name": "void at::native::(anonymous namespace)::cunn_SoftMaxForwardReg<float, float, float, at::native::(anonymous namespace)::SoftMaxForwardEpilogue, long, 4>(float*, float const*, long)",
+        "grid": [
+          32,
+          1,
+          1
+        ],
+        "block": [
+          1024,
+          1,
+          1
+        ],
+        "registers per thread": 30,
+        "shared memory": 128,
+        "occupancy": {
+          "activeBlocksPerMultiprocessor": 1,
+          "limitingFactors": "WARPS",
+          "blockLimitRegs": 2,
+          "blockLimitSharedMem": 88,
+          "blockLimitWarps": 1,
+          "blockLimitBlocks": 24,
+          "blockLimitBarriers": 2147483647,
+          "allocatedRegistersPerBlock": 32768,
+          "allocatedSharedMemPerBlock": 1152
+        }
+      }
+    ]
+  },
+  {
+    "M": 32,
+    "N": 4096,
+    "provider": "triton4",
+    "trace": "trace_32x4096_triton4.json",
+    "kernels": [
+      {
+        "name": "softmax_kernel",
+        "grid": [
+          32,
+          1,
+          1
+        ],
+        "block": [
+          128,
+          1,
+          1
+        ],
+        "registers per thread": 54,
+        "shared memory": 16,
+        "occupancy": {
+          "activeBlocksPerMultiprocessor": 9,
+          "limitingFactors": "REGS",
+          "blockLimitRegs": 9,
+          "blockLimitSharedMem": 88,
+          "blockLimitWarps": 12,
+          "blockLimitBlocks": 24,
+          "blockLimitBarriers": 2147483647,
+          "allocatedRegistersPerBlock": 7168,
+          "allocatedSharedMemPerBlock": 1152
+        }
+      },
+      {
+        "name": "softmax_kernel",
+        "grid": [
+          32,
+          1,
+          1
+        ],
+        "block": [
+          128,
+          1,
+          1
+        ],
+        "registers per thread": 54,
+        "shared memory": 16,
+        "occupancy": {
+          "activeBlocksPerMultiprocessor": 9,
+          "limitingFactors": "REGS",
+          "blockLimitRegs": 9,
+          "blockLimitSharedMem": 88,
+          "blockLimitWarps": 12,
+          "blockLimitBlocks": 24,
+          "blockLimitBarriers": 2147483647,
+          "allocatedRegistersPerBlock": 7168,
+          "allocatedSharedMemPerBlock": 1152
+        }
+      },
+      {
+        "name": "softmax_kernel",
+        "grid": [
+          32,
+          1,
+          1
+        ],
+        "block": [
+          128,
+          1,
+          1
+        ],
+        "registers per thread": 54,
+        "shared memory": 16,
+        "occupancy": {
+          "activeBlocksPerMultiprocessor": 9,
+          "limitingFactors": "REGS",
+          "blockLimitRegs": 9,
+          "blockLimitSharedMem": 88,
+          "blockLimitWarps": 12,
+          "blockLimitBlocks": 24,
+          "blockLimitBarriers": 2147483647,
+          "allocatedRegistersPerBlock": 7168,
+          "allocatedSharedMemPerBlock": 1152
+        }
+      }
+    ]
+  },
+  {
+    "M": 1024,
+    "N": 1024,
+    "provider": "torch",
+    "trace": "trace_1024x1024_torch.json",
+    "kernels": [
+      {
+        "name": "void (anonymous namespace)::softmax_warp_forward<float, float, float, 10, false, false, 32>(float*, float const*, int, int, int, bool const*, int, bool)",
+        "grid": [
+          256,
+          1,
+          1
+        ],
+        "block": [
+          32,
+          4,
+          1
+        ],
+        "registers per thread": 48,
+        "shared memory": 0,
+        "occupancy": {
+          "activeBlocksPerMultiprocessor": 10,
+          "limitingFactors": "REGS",
+          "blockLimitRegs": 10,
+          "blockLimitSharedMem": 100,
+          "blockLimitWarps": 12,
+          "blockLimitBlocks": 24,
+          "blockLimitBarriers": 2147483647,
+          "allocatedRegistersPerBlock": 6144,
+          "allocatedSharedMemPerBlock": 1024
+        }
+      },
+      {
+        "name": "void (anonymous namespace)::softmax_warp_forward<float, float, float, 10, false, false, 32>(float*, float const*, int, int, int, bool const*, int, bool)",
+        "grid": [
+          256,
+          1,
+          1
+        ],
+        "block": [
+          32,
+          4,
+          1
+        ],
+        "registers per thread": 48,
+        "shared memory": 0,
+        "occupancy": {
+          "activeBlocksPerMultiprocessor": 10,
+          "limitingFactors": "REGS",
+          "blockLimitRegs": 10,
+          "blockLimitSharedMem": 100,
+          "blockLimitWarps": 12,
+          "blockLimitBlocks": 24,
+          "blockLimitBarriers": 2147483647,
+          "allocatedRegistersPerBlock": 6144,
+          "allocatedSharedMemPerBlock": 1024
+        }
+      },
+      {
+        "name": "void (anonymous namespace)::softmax_warp_forward<float, float, float, 10, false, false, 32>(float*, float const*, int, int, int, bool const*, int, bool)",
+        "grid": [
+          256,
+          1,
+          1
+        ],
+        "block": [
+          32,
+          4,
+          1
+        ],
+        "registers per thread": 48,
+        "shared memory": 0,
+        "occupancy": {
+          "activeBlocksPerMultiprocessor": 10,
+          "limitingFactors": "REGS",
+          "blockLimitRegs": 10,
+          "blockLimitSharedMem": 100,
+          "blockLimitWarps": 12,
+          "blockLimitBlocks": 24,
+          "blockLimitBarriers": 2147483647,
+          "allocatedRegistersPerBlock": 6144,
+          "allocatedSharedMemPerBlock": 1024
+        }
+      }
+    ]
+  },
+  {
+    "M": 1024,
+    "N": 1024,
+    "provider": "triton4",
+    "trace": "trace_1024x1024_triton4.json",
+    "kernels": [
+      {
+        "name": "softmax_kernel",
+        "grid": [
+          1024,
+          1,
+          1
+        ],
+        "block": [
+          128,
+          1,
+          1
+        ],
+        "registers per thread": 23,
+        "shared memory": 16,
+        "occupancy": {
+          "activeBlocksPerMultiprocessor": 12,
+          "limitingFactors": "WARPS",
+          "blockLimitRegs": 21,
+          "blockLimitSharedMem": 88,
+          "blockLimitWarps": 12,
+          "blockLimitBlocks": 24,
+          "blockLimitBarriers": 2147483647,
+          "allocatedRegistersPerBlock": 3072,
+          "allocatedSharedMemPerBlock": 1152
+        }
+      },
+      {
+        "name": "softmax_kernel",
+        "grid": [
+          1024,
+          1,
+          1
+        ],
+        "block": [
+          128,
+          1,
+          1
+        ],
+        "registers per thread": 23,
+        "shared memory": 16,
+        "occupancy": {
+          "activeBlocksPerMultiprocessor": 12,
+          "limitingFactors": "WARPS",
+          "blockLimitRegs": 21,
+          "blockLimitSharedMem": 88,
+          "blockLimitWarps": 12,
+          "blockLimitBlocks": 24,
+          "blockLimitBarriers": 2147483647,
+          "allocatedRegistersPerBlock": 3072,
+          "allocatedSharedMemPerBlock": 1152
+        }
+      },
+      {
+        "name": "softmax_kernel",
+        "grid": [
+          1024,
+          1,
+          1
+        ],
+        "block": [
+          128,
+          1,
+          1
+        ],
+        "registers per thread": 23,
+        "shared memory": 16,
+        "occupancy": {
+          "activeBlocksPerMultiprocessor": 12,
+          "limitingFactors": "WARPS",
+          "blockLimitRegs": 21,
+          "blockLimitSharedMem": 88,
+          "blockLimitWarps": 12,
+          "blockLimitBlocks": 24,
+          "blockLimitBarriers": 2147483647,
+          "allocatedRegistersPerBlock": 3072,
+          "allocatedSharedMemPerBlock": 1152
+        }
+      }
+    ]
+  },
+  {
+    "M": 1024,
+    "N": 1025,
+    "provider": "torch",
+    "trace": "trace_1024x1025_torch.json",
+    "kernels": [
+      {
+        "name": "void (anonymous namespace)::softmax_warp_forward<float, float, float, 11, false, false, 32>(float*, float const*, int, int, int, bool const*, int, bool)",
+        "grid": [
+          256,
+          1,
+          1
+        ],
+        "block": [
+          32,
+          4,
+          1
+        ],
+        "registers per thread": 80,
+        "shared memory": 0,
+        "occupancy": {
+          "activeBlocksPerMultiprocessor": 6,
+          "limitingFactors": "REGS",
+          "blockLimitRegs": 6,
+          "blockLimitSharedMem": 100,
+          "blockLimitWarps": 12,
+          "blockLimitBlocks": 24,
+          "blockLimitBarriers": 2147483647,
+          "allocatedRegistersPerBlock": 10240,
+          "allocatedSharedMemPerBlock": 1024
+        }
+      },
+      {
+        "name": "void (anonymous namespace)::softmax_warp_forward<float, float, float, 11, false, false, 32>(float*, float const*, int, int, int, bool const*, int, bool)",
+        "grid": [
+          256,
+          1,
+          1
+        ],
+        "block": [
+          32,
+          4,
+          1
+        ],
+        "registers per thread": 80,
+        "shared memory": 0,
+        "occupancy": {
+          "activeBlocksPerMultiprocessor": 6,
+          "limitingFactors": "REGS",
+          "blockLimitRegs": 6,
+          "blockLimitSharedMem": 100,
+          "blockLimitWarps": 12,
+          "blockLimitBlocks": 24,
+          "blockLimitBarriers": 2147483647,
+          "allocatedRegistersPerBlock": 10240,
+          "allocatedSharedMemPerBlock": 1024
+        }
+      },
+      {
+        "name": "void (anonymous namespace)::softmax_warp_forward<float, float, float, 11, false, false, 32>(float*, float const*, int, int, int, bool const*, int, bool)",
+        "grid": [
+          256,
+          1,
+          1
+        ],
+        "block": [
+          32,
+          4,
+          1
+        ],
+        "registers per thread": 80,
+        "shared memory": 0,
+        "occupancy": {
+          "activeBlocksPerMultiprocessor": 6,
+          "limitingFactors": "REGS",
+          "blockLimitRegs": 6,
+          "blockLimitSharedMem": 100,
+          "blockLimitWarps": 12,
+          "blockLimitBlocks": 24,
+          "blockLimitBarriers": 2147483647,
+          "allocatedRegistersPerBlock": 10240,
+          "allocatedSharedMemPerBlock": 1024
+        }
+      }
+    ]
+  },
+  {
+    "M": 1024,
+    "N": 1025,
+    "provider": "triton4",
+    "trace": "trace_1024x1025_triton4.json",
+    "kernels": [
+      {
+        "name": "softmax_kernel",
+        "grid": [
+          1024,
+          1,
+          1
+        ],
+        "block": [
+          128,
+          1,
+          1
+        ],
+        "registers per thread": 40,
+        "shared memory": 16,
+        "occupancy": {
+          "activeBlocksPerMultiprocessor": 12,
+          "limitingFactors": "WARPS|REGS",
+          "blockLimitRegs": 12,
+          "blockLimitSharedMem": 88,
+          "blockLimitWarps": 12,
+          "blockLimitBlocks": 24,
+          "blockLimitBarriers": 2147483647,
+          "allocatedRegistersPerBlock": 5120,
+          "allocatedSharedMemPerBlock": 1152
+        }
+      },
+      {
+        "name": "softmax_kernel",
+        "grid": [
+          1024,
+          1,
+          1
+        ],
+        "block": [
+          128,
+          1,
+          1
+        ],
+        "registers per thread": 40,
+        "shared memory": 16,
+        "occupancy": {
+          "activeBlocksPerMultiprocessor": 12,
+          "limitingFactors": "WARPS|REGS",
+          "blockLimitRegs": 12,
+          "blockLimitSharedMem": 88,
+          "blockLimitWarps": 12,
+          "blockLimitBlocks": 24,
+          "blockLimitBarriers": 2147483647,
+          "allocatedRegistersPerBlock": 5120,
+          "allocatedSharedMemPerBlock": 1152
+        }
+      },
+      {
+        "name": "softmax_kernel",
+        "grid": [
+          1024,
+          1,
+          1
+        ],
+        "block": [
+          128,
+          1,
+          1
+        ],
+        "registers per thread": 40,
+        "shared memory": 16,
+        "occupancy": {
+          "activeBlocksPerMultiprocessor": 12,
+          "limitingFactors": "WARPS|REGS",
+          "blockLimitRegs": 12,
+          "blockLimitSharedMem": 88,
+          "blockLimitWarps": 12,
+          "blockLimitBlocks": 24,
+          "blockLimitBarriers": 2147483647,
+          "allocatedRegistersPerBlock": 5120,
+          "allocatedSharedMemPerBlock": 1152
+        }
+      }
+    ]
+  },
+  {
+    "M": 4096,
+    "N": 4096,
+    "provider": "torch",
+    "trace": "trace_4096x4096_torch.json",
+    "kernels": [
+      {
+        "name": "void at::native::(anonymous namespace)::cunn_SoftMaxForwardReg<float, float, float, at::native::(anonymous namespace)::SoftMaxForwardEpilogue, long, 4>(float*, float const*, long)",
+        "grid": [
+          4096,
+          1,
+          1
+        ],
+        "block": [
+          1024,
+          1,
+          1
+        ],
+        "registers per thread": 30,
+        "shared memory": 128,
+        "occupancy": {
+          "activeBlocksPerMultiprocessor": 1,
+          "limitingFactors": "WARPS",
+          "blockLimitRegs": 2,
+          "blockLimitSharedMem": 88,
+          "blockLimitWarps": 1,
+          "blockLimitBlocks": 24,
+          "blockLimitBarriers": 2147483647,
+          "allocatedRegistersPerBlock": 32768,
+          "allocatedSharedMemPerBlock": 1152
+        }
+      },
+      {
+        "name": "void at::native::(anonymous namespace)::cunn_SoftMaxForwardReg<float, float, float, at::native::(anonymous namespace)::SoftMaxForwardEpilogue, long, 4>(float*, float const*, long)",
+        "grid": [
+          4096,
+          1,
+          1
+        ],
+        "block": [
+          1024,
+          1,
+          1
+        ],
+        "registers per thread": 30,
+        "shared memory": 128,
+        "occupancy": {
+          "activeBlocksPerMultiprocessor": 1,
+          "limitingFactors": "WARPS",
+          "blockLimitRegs": 2,
+          "blockLimitSharedMem": 88,
+          "blockLimitWarps": 1,
+          "blockLimitBlocks": 24,
+          "blockLimitBarriers": 2147483647,
+          "allocatedRegistersPerBlock": 32768,
+          "allocatedSharedMemPerBlock": 1152
+        }
+      },
+      {
+        "name": "void at::native::(anonymous namespace)::cunn_SoftMaxForwardReg<float, float, float, at::native::(anonymous namespace)::SoftMaxForwardEpilogue, long, 4>(float*, float const*, long)",
+        "grid": [
+          4096,
+          1,
+          1
+        ],
+        "block": [
+          1024,
+          1,
+          1
+        ],
+        "registers per thread": 30,
+        "shared memory": 128,
+        "occupancy": {
+          "activeBlocksPerMultiprocessor": 1,
+          "limitingFactors": "WARPS",
+          "blockLimitRegs": 2,
+          "blockLimitSharedMem": 88,
+          "blockLimitWarps": 1,
+          "blockLimitBlocks": 24,
+          "blockLimitBarriers": 2147483647,
+          "allocatedRegistersPerBlock": 32768,
+          "allocatedSharedMemPerBlock": 1152
+        }
+      }
+    ]
+  },
+  {
+    "M": 4096,
+    "N": 4096,
+    "provider": "triton4",
+    "trace": "trace_4096x4096_triton4.json",
+    "kernels": [
+      {
+        "name": "softmax_kernel",
+        "grid": [
+          4096,
+          1,
+          1
+        ],
+        "block": [
+          128,
+          1,
+          1
+        ],
+        "registers per thread": 54,
+        "shared memory": 16,
+        "occupancy": {
+          "activeBlocksPerMultiprocessor": 9,
+          "limitingFactors": "REGS",
+          "blockLimitRegs": 9,
+          "blockLimitSharedMem": 88,
+          "blockLimitWarps": 12,
+          "blockLimitBlocks": 24,
+          "blockLimitBarriers": 2147483647,
+          "allocatedRegistersPerBlock": 7168,
+          "allocatedSharedMemPerBlock": 1152
+        }
+      },
+      {
+        "name": "softmax_kernel",
+        "grid": [
+          4096,
+          1,
+          1
+        ],
+        "block": [
+          128,
+          1,
+          1
+        ],
+        "registers per thread": 54,
+        "shared memory": 16,
+        "occupancy": {
+          "activeBlocksPerMultiprocessor": 9,
+          "limitingFactors": "REGS",
+          "blockLimitRegs": 9,
+          "blockLimitSharedMem": 88,
+          "blockLimitWarps": 12,
+          "blockLimitBlocks": 24,
+          "blockLimitBarriers": 2147483647,
+          "allocatedRegistersPerBlock": 7168,
+          "allocatedSharedMemPerBlock": 1152
+        }
+      },
+      {
+        "name": "softmax_kernel",
+        "grid": [
+          4096,
+          1,
+          1
+        ],
+        "block": [
+          128,
+          1,
+          1
+        ],
+        "registers per thread": 54,
+        "shared memory": 16,
+        "occupancy": {
+          "activeBlocksPerMultiprocessor": 9,
+          "limitingFactors": "REGS",
+          "blockLimitRegs": 9,
+          "blockLimitSharedMem": 88,
+          "blockLimitWarps": 12,
+          "blockLimitBlocks": 24,
+          "blockLimitBarriers": 2147483647,
+          "allocatedRegistersPerBlock": 7168,
+          "allocatedSharedMemPerBlock": 1152
+        }
+      }
+    ]
+  }
+]

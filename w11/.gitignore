@@ -1,0 +1,6 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+*.tmp
+# Small experiment records remain versionable; do not ignore results/ wholesale.

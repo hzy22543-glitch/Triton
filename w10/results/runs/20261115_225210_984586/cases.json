@@ -1,0 +1,637 @@
+[
+  {
+    "name": "vector_add_0",
+    "shape": [
+      0
+    ],
+    "dtype": "torch.float32",
+    "kind": "empty",
+    "rtol": 1e-05,
+    "atol": 1e-06,
+    "status": "PASS"
+  },
+  {
+    "name": "vector_add_1",
+    "shape": [
+      1
+    ],
+    "dtype": "torch.float32",
+    "kind": "numerical",
+    "rtol": 1e-05,
+    "atol": 1e-06,
+    "max_abs_error": 0.0,
+    "status": "PASS"
+  },
+  {
+    "name": "vector_add_10",
+    "shape": [
+      10
+    ],
+    "dtype": "torch.float32",
+    "kind": "numerical",
+    "rtol": 1e-05,
+    "atol": 1e-06,
+    "max_abs_error": 0.0,
+    "status": "PASS"
+  },
+  {
+    "name": "vector_add_255",
+    "shape": [
+      255
+    ],
+    "dtype": "torch.float32",
+    "kind": "numerical",
+    "rtol": 1e-05,
+    "atol": 1e-06,
+    "max_abs_error": 0.0,
+    "status": "PASS"
+  },
+  {
+    "name": "vector_add_256",
+    "shape": [
+      256
+    ],
+    "dtype": "torch.float32",
+    "kind": "numerical",
+    "rtol": 1e-05,
+    "atol": 1e-06,
+    "max_abs_error": 0.0,
+    "status": "PASS"
+  },
+  {
+    "name": "vector_add_257",
+    "shape": [
+      257
+    ],
+    "dtype": "torch.float32",
+    "kind": "numerical",
+    "rtol": 1e-05,
+    "atol": 1e-06,
+    "max_abs_error": 0.0,
+    "status": "PASS"
+  },
+  {
+    "name": "vector_add_1000",
+    "shape": [
+      1000
+    ],
+    "dtype": "torch.float32",
+    "kind": "numerical",
+    "rtol": 1e-05,
+    "atol": 1e-06,
+    "max_abs_error": 0.0,
+    "status": "PASS"
+  },
+  {
+    "name": "vector_add_4096",
+    "shape": [
+      4096
+    ],
+    "dtype": "torch.float32",
+    "kind": "numerical",
+    "rtol": 1e-05,
+    "atol": 1e-06,
+    "max_abs_error": 0.0,
+    "status": "PASS"
+  },
+  {
+    "name": "vector_add_reject_cpu",
+    "shape": [
+      4
+    ],
+    "dtype": "torch.float32",
+    "kind": "rejection",
+    "rejection_reason": "输入必须在 GPU 上",
+    "status": "PASS"
+  },
+  {
+    "name": "vector_add_reject_mixed_device",
+    "shape": [
+      4
+    ],
+    "dtype": "torch.float32",
+    "kind": "rejection",
+    "rejection_reason": "输入必须在 GPU 上",
+    "status": "PASS"
+  },
+  {
+    "name": "vector_add_reject_dtype",
+    "shape": [
+      4
+    ],
+    "dtype": "torch.float16",
+    "kind": "rejection",
+    "rejection_reason": "当前版本只支持 FP32",
+    "status": "PASS"
+  },
+  {
+    "name": "vector_add_reject_dimension",
+    "shape": [
+      2,
+      2
+    ],
+    "dtype": "torch.float32",
+    "kind": "rejection",
+    "rejection_reason": "输入必须是一维张量",
+    "status": "PASS"
+  },
+  {
+    "name": "vector_add_reject_shape",
+    "shape": [
+      4
+    ],
+    "dtype": "torch.float32",
+    "kind": "rejection",
+    "rejection_reason": "输入形状必须相同",
+    "status": "PASS"
+  },
+  {
+    "name": "vector_add_reject_noncontiguous",
+    "shape": [
+      4
+    ],
+    "dtype": "torch.float32",
+    "kind": "rejection",
+    "rejection_reason": "输入必须连续",
+    "status": "PASS"
+  },
+  {
+    "name": "softmax_random",
+    "shape": [
+      1,
+      1
+    ],
+    "dtype": "torch.float32",
+    "kind": "numerical",
+    "rtol": 1e-05,
+    "atol": 1e-06,
+    "max_abs_error": 0.0,
+    "row_sum_atol": 1e-06,
+    "max_row_sum_error": 0.0,
+    "status": "PASS"
+  },
+  {
+    "name": "softmax_random",
+    "shape": [
+      2,
+      3
+    ],
+    "dtype": "torch.float32",
+    "kind": "numerical",
+    "rtol": 1e-05,
+    "atol": 1e-06,
+    "max_abs_error": 2.9802322387695312e-08,
+    "row_sum_atol": 1e-06,
+    "max_row_sum_error": 0.0,
+    "status": "PASS"
+  },
+  {
+    "name": "softmax_random",
+    "shape": [
+      3,
+      5
+    ],
+    "dtype": "torch.float32",
+    "kind": "numerical",
+    "rtol": 1e-05,
+    "atol": 1e-06,
+    "max_abs_error": 5.960464477539063e-08,
+    "row_sum_atol": 1e-06,
+    "max_row_sum_error": 5.960464477539063e-08,
+    "status": "PASS"
+  },
+  {
+    "name": "softmax_random",
+    "shape": [
+      7,
+      255
+    ],
+    "dtype": "torch.float32",
+    "kind": "numerical",
+    "rtol": 1e-05,
+    "atol": 1e-06,
+    "max_abs_error": 3.725290298461914e-09,
+    "row_sum_atol": 1e-06,
+    "max_row_sum_error": 1.1920928955078125e-07,
+    "status": "PASS"
+  },
+  {
+    "name": "softmax_random",
+    "shape": [
+      7,
+      256
+    ],
+    "dtype": "torch.float32",
+    "kind": "numerical",
+    "rtol": 1e-05,
+    "atol": 1e-06,
+    "max_abs_error": 7.450580596923828e-09,
+    "row_sum_atol": 1e-06,
+    "max_row_sum_error": 1.1920928955078125e-07,
+    "status": "PASS"
+  },
+  {
+    "name": "softmax_random",
+    "shape": [
+      7,
+      257
+    ],
+    "dtype": "torch.float32",
+    "kind": "numerical",
+    "rtol": 1e-05,
+    "atol": 1e-06,
+    "max_abs_error": 3.725290298461914e-09,
+    "row_sum_atol": 1e-06,
+    "max_row_sum_error": 1.1920928955078125e-07,
+    "status": "PASS"
+  },
+  {
+    "name": "softmax_random",
+    "shape": [
+      32,
+      1000
+    ],
+    "dtype": "torch.float32",
+    "kind": "numerical",
+    "rtol": 1e-05,
+    "atol": 1e-06,
+    "max_abs_error": 2.7939677238464355e-09,
+    "row_sum_atol": 1e-06,
+    "max_row_sum_error": 1.1920928955078125e-07,
+    "status": "PASS"
+  },
+  {
+    "name": "softmax_random",
+    "shape": [
+      16,
+      4096
+    ],
+    "dtype": "torch.float32",
+    "kind": "numerical",
+    "rtol": 1e-05,
+    "atol": 1e-06,
+    "max_abs_error": 9.313225746154785e-10,
+    "row_sum_atol": 1e-06,
+    "max_row_sum_error": 1.1920928955078125e-07,
+    "status": "PASS"
+  },
+  {
+    "name": "softmax_random",
+    "shape": [
+      1024,
+      257
+    ],
+    "dtype": "torch.float32",
+    "kind": "numerical",
+    "rtol": 1e-05,
+    "atol": 1e-06,
+    "max_abs_error": 1.4901161193847656e-08,
+    "row_sum_atol": 1e-06,
+    "max_row_sum_error": 2.384185791015625e-07,
+    "status": "PASS"
+  },
+  {
+    "name": "softmax_random",
+    "shape": [
+      0,
+      5
+    ],
+    "dtype": "torch.float32",
+    "kind": "empty",
+    "rtol": 1e-05,
+    "atol": 1e-06,
+    "status": "PASS"
+  },
+  {
+    "name": "softmax_large_shift",
+    "shape": [
+      2,
+      3
+    ],
+    "dtype": "torch.float32",
+    "kind": "numerical",
+    "rtol": 1e-05,
+    "atol": 1e-06,
+    "max_abs_error": 2.9802322387695312e-08,
+    "row_sum_atol": 1e-06,
+    "max_row_sum_error": 1.1920928955078125e-07,
+    "status": "PASS"
+  },
+  {
+    "name": "softmax_negative",
+    "shape": [
+      1,
+      5
+    ],
+    "dtype": "torch.float32",
+    "kind": "numerical",
+    "rtol": 1e-05,
+    "atol": 1e-06,
+    "max_abs_error": 5.960464477539063e-08,
+    "row_sum_atol": 1e-06,
+    "max_row_sum_error": 5.960464477539063e-08,
+    "status": "PASS"
+  },
+  {
+    "name": "softmax_equal",
+    "shape": [
+      2,
+      5
+    ],
+    "dtype": "torch.float32",
+    "kind": "numerical",
+    "rtol": 1e-05,
+    "atol": 1e-06,
+    "max_abs_error": 0.0,
+    "row_sum_atol": 1e-06,
+    "max_row_sum_error": 0.0,
+    "status": "PASS"
+  },
+  {
+    "name": "softmax_extreme_finite",
+    "shape": [
+      2,
+      3
+    ],
+    "dtype": "torch.float32",
+    "kind": "numerical",
+    "rtol": 1e-05,
+    "atol": 1e-06,
+    "max_abs_error": 0.0,
+    "row_sum_atol": 1e-06,
+    "max_row_sum_error": 0.0,
+    "status": "PASS"
+  },
+  {
+    "name": "softmax_random",
+    "shape": [
+      1,
+      1
+    ],
+    "dtype": "torch.float16",
+    "kind": "numerical",
+    "rtol": 0.001,
+    "atol": 1e-05,
+    "max_abs_error": 0.0,
+    "row_sum_atol": 0.001,
+    "max_row_sum_error": 0.0,
+    "status": "PASS"
+  },
+  {
+    "name": "softmax_random",
+    "shape": [
+      2,
+      3
+    ],
+    "dtype": "torch.float16",
+    "kind": "numerical",
+    "rtol": 0.001,
+    "atol": 1e-05,
+    "max_abs_error": 0.0,
+    "row_sum_atol": 0.001,
+    "max_row_sum_error": 0.000244140625,
+    "status": "PASS"
+  },
+  {
+    "name": "softmax_random",
+    "shape": [
+      3,
+      5
+    ],
+    "dtype": "torch.float16",
+    "kind": "numerical",
+    "rtol": 0.001,
+    "atol": 1e-05,
+    "max_abs_error": 0.0,
+    "row_sum_atol": 0.001,
+    "max_row_sum_error": 0.000244140625,
+    "status": "PASS"
+  },
+  {
+    "name": "softmax_random",
+    "shape": [
+      7,
+      255
+    ],
+    "dtype": "torch.float16",
+    "kind": "numerical",
+    "rtol": 0.001,
+    "atol": 1e-05,
+    "max_abs_error": 0.0,
+    "row_sum_atol": 0.001,
+    "max_row_sum_error": 2.574920654296875e-05,
+    "status": "PASS"
+  },
+  {
+    "name": "softmax_random",
+    "shape": [
+      7,
+      256
+    ],
+    "dtype": "torch.float16",
+    "kind": "numerical",
+    "rtol": 0.001,
+    "atol": 1e-05,
+    "max_abs_error": 0.0,
+    "row_sum_atol": 0.001,
+    "max_row_sum_error": 4.0650367736816406e-05,
+    "status": "PASS"
+  },
+  {
+    "name": "softmax_random",
+    "shape": [
+      7,
+      257
+    ],
+    "dtype": "torch.float16",
+    "kind": "numerical",
+    "rtol": 0.001,
+    "atol": 1e-05,
+    "max_abs_error": 3.814697265625e-06,
+    "row_sum_atol": 0.001,
+    "max_row_sum_error": 3.814697265625e-05,
+    "status": "PASS"
+  },
+  {
+    "name": "softmax_random",
+    "shape": [
+      32,
+      1000
+    ],
+    "dtype": "torch.float16",
+    "kind": "numerical",
+    "rtol": 0.001,
+    "atol": 1e-05,
+    "max_abs_error": 1.9073486328125e-06,
+    "row_sum_atol": 0.001,
+    "max_row_sum_error": 2.0265579223632812e-05,
+    "status": "PASS"
+  },
+  {
+    "name": "softmax_random",
+    "shape": [
+      16,
+      4096
+    ],
+    "dtype": "torch.float16",
+    "kind": "numerical",
+    "rtol": 0.001,
+    "atol": 1e-05,
+    "max_abs_error": 5.960464477539063e-08,
+    "row_sum_atol": 0.001,
+    "max_row_sum_error": 1.1801719665527344e-05,
+    "status": "PASS"
+  },
+  {
+    "name": "softmax_random",
+    "shape": [
+      1024,
+      257
+    ],
+    "dtype": "torch.float16",
+    "kind": "numerical",
+    "rtol": 0.001,
+    "atol": 1e-05,
+    "max_abs_error": 7.62939453125e-06,
+    "row_sum_atol": 0.001,
+    "max_row_sum_error": 7.30752944946289e-05,
+    "status": "PASS"
+  },
+  {
+    "name": "softmax_random",
+    "shape": [
+      0,
+      5
+    ],
+    "dtype": "torch.float16",
+    "kind": "empty",
+    "rtol": 0.001,
+    "atol": 1e-05,
+    "status": "PASS"
+  },
+  {
+    "name": "softmax_large_shift",
+    "shape": [
+      2,
+      3
+    ],
+    "dtype": "torch.float16",
+    "kind": "numerical",
+    "rtol": 0.001,
+    "atol": 1e-05,
+    "max_abs_error": 0.0,
+    "row_sum_atol": 0.001,
+    "max_row_sum_error": 0.00018310546875,
+    "status": "PASS"
+  },
+  {
+    "name": "softmax_negative",
+    "shape": [
+      1,
+      5
+    ],
+    "dtype": "torch.float16",
+    "kind": "numerical",
+    "rtol": 0.001,
+    "atol": 1e-05,
+    "max_abs_error": 0.0,
+    "row_sum_atol": 0.001,
+    "max_row_sum_error": 0.00018310546875,
+    "status": "PASS"
+  },
+  {
+    "name": "softmax_equal",
+    "shape": [
+      2,
+      5
+    ],
+    "dtype": "torch.float16",
+    "kind": "numerical",
+    "rtol": 0.001,
+    "atol": 1e-05,
+    "max_abs_error": 0.0,
+    "row_sum_atol": 0.001,
+    "max_row_sum_error": 0.000244140625,
+    "status": "PASS"
+  },
+  {
+    "name": "softmax_extreme_finite",
+    "shape": [
+      2,
+      3
+    ],
+    "dtype": "torch.float16",
+    "kind": "numerical",
+    "rtol": 0.001,
+    "atol": 1e-05,
+    "max_abs_error": 0.0,
+    "row_sum_atol": 0.001,
+    "max_row_sum_error": 0.0,
+    "status": "PASS"
+  },
+  {
+    "name": "softmax_reject_zero_width",
+    "shape": [
+      2,
+      0
+    ],
+    "dtype": "torch.float32",
+    "kind": "rejection",
+    "rejection_reason": "当前版本要求行宽为 1～4096",
+    "status": "PASS"
+  },
+  {
+    "name": "softmax_reject_too_wide",
+    "shape": [
+      2,
+      4097
+    ],
+    "dtype": "torch.float32",
+    "kind": "rejection",
+    "rejection_reason": "当前版本要求行宽为 1～4096",
+    "status": "PASS"
+  },
+  {
+    "name": "softmax_reject_noncontiguous",
+    "shape": [
+      5,
+      3
+    ],
+    "dtype": "torch.float32",
+    "kind": "rejection",
+    "rejection_reason": "当前版本只支持连续张量",
+    "status": "PASS"
+  },
+  {
+    "name": "softmax_reject_one_dimensional",
+    "shape": [
+      5
+    ],
+    "dtype": "torch.float32",
+    "kind": "rejection",
+    "rejection_reason": "输入必须是二维张量",
+    "status": "PASS"
+  },
+  {
+    "name": "softmax_reject_cpu",
+    "shape": [
+      3,
+      5
+    ],
+    "dtype": "torch.float32",
+    "kind": "rejection",
+    "rejection_reason": "输入必须在 GPU 上",
+    "status": "PASS"
+  },
+  {
+    "name": "softmax_reject_float64",
+    "shape": [
+      3,
+      5
+    ],
+    "dtype": "torch.float64",
+    "kind": "rejection",
+    "rejection_reason": "当前版本只支持 FP32 或 FP16",
+    "status": "PASS"
+  }
+]

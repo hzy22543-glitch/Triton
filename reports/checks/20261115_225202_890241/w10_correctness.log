@@ -1,0 +1,50 @@
+PASS vector_add_0                           (0,)           torch.float32
+PASS vector_add_1                           (1,)           torch.float32
+PASS vector_add_10                          (10,)          torch.float32
+PASS vector_add_255                         (255,)         torch.float32
+PASS vector_add_256                         (256,)         torch.float32
+PASS vector_add_257                         (257,)         torch.float32
+PASS vector_add_1000                        (1000,)        torch.float32
+PASS vector_add_4096                        (4096,)        torch.float32
+PASS vector_add_reject_cpu                  (4,)           torch.float32
+PASS vector_add_reject_mixed_device         (4,)           torch.float32
+PASS vector_add_reject_dtype                (4,)           torch.float16
+PASS vector_add_reject_dimension            (2, 2)         torch.float32
+PASS vector_add_reject_shape                (4,)           torch.float32
+PASS vector_add_reject_noncontiguous        (4,)           torch.float32
+PASS softmax_random                         (1, 1)         torch.float32
+PASS softmax_random                         (2, 3)         torch.float32
+PASS softmax_random                         (3, 5)         torch.float32
+PASS softmax_random                         (7, 255)       torch.float32
+PASS softmax_random                         (7, 256)       torch.float32
+PASS softmax_random                         (7, 257)       torch.float32
+PASS softmax_random                         (32, 1000)     torch.float32
+PASS softmax_random                         (16, 4096)     torch.float32
+PASS softmax_random                         (1024, 257)    torch.float32
+PASS softmax_random                         (0, 5)         torch.float32
+PASS softmax_large_shift                    (2, 3)         torch.float32
+PASS softmax_negative                       (1, 5)         torch.float32
+PASS softmax_equal                          (2, 5)         torch.float32
+PASS softmax_extreme_finite                 (2, 3)         torch.float32
+PASS softmax_random                         (1, 1)         torch.float16
+PASS softmax_random                         (2, 3)         torch.float16
+PASS softmax_random                         (3, 5)         torch.float16
+PASS softmax_random                         (7, 255)       torch.float16
+PASS softmax_random                         (7, 256)       torch.float16
+PASS softmax_random                         (7, 257)       torch.float16
+PASS softmax_random                         (32, 1000)     torch.float16
+PASS softmax_random                         (16, 4096)     torch.float16
+PASS softmax_random                         (1024, 257)    torch.float16
+PASS softmax_random                         (0, 5)         torch.float16
+PASS softmax_large_shift                    (2, 3)         torch.float16
+PASS softmax_negative                       (1, 5)         torch.float16
+PASS softmax_equal                          (2, 5)         torch.float16
+PASS softmax_extreme_finite                 (2, 3)         torch.float16
+PASS softmax_reject_zero_width              (2, 0)         torch.float32
+PASS softmax_reject_too_wide                (2, 4097)      torch.float32
+PASS softmax_reject_noncontiguous           (5, 3)         torch.float32
+PASS softmax_reject_one_dimensional         (5,)           torch.float32
+PASS softmax_reject_cpu                     (3, 5)         torch.float32
+PASS softmax_reject_float64                 (3, 5)         torch.float64
+{"total": 48, "passed": 48, "failed": 0} 
+Evidence: /home/administrator/ai-infra/cuda_learning/w10/results/runs/20261115_225210_984586

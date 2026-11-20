@@ -1,0 +1,24 @@
+round=1 N=1024
+N=1024 | avg=0.0066 ms | effective BW=1.87 GB/s
+round=2 N=1024
+N=1024 | avg=0.0072 ms | effective BW=1.72 GB/s
+round=3 N=1024
+N=1024 | avg=0.0058 ms | effective BW=2.11 GB/s
+round=1 N=262144
+N=262144 | avg=0.0061 ms | effective BW=512.85 GB/s
+round=2 N=262144
+N=262144 | avg=0.0073 ms | effective BW=429.82 GB/s
+round=3 N=262144
+N=262144 | avg=0.0135 ms | effective BW=233.79 GB/s
+round=1 N=2097152
+N=2097152 | avg=0.0130 ms | effective BW=1941.42 GB/s
+round=2 N=2097152
+N=2097152 | avg=0.0165 ms | effective BW=1529.31 GB/s
+round=3 N=2097152
+N=2097152 | avg=0.0122 ms | effective BW=2068.69 GB/s
+round=1 N=16777216
+N=16777216 | avg=0.5772 ms | effective BW=348.80 GB/s
+round=2 N=16777216
+N=16777216 | avg=0.5736 ms | effective BW=350.97 GB/s
+round=3 N=16777216
+N=16777216 | avg=0.5747 ms | effective BW=350.32 GB/s

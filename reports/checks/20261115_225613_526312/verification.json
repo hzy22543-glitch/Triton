@@ -1,0 +1,140 @@
+{
+  "timestamp": "2026-11-15T22:56:13.526312+08:00",
+  "python": "/home/administrator/ai-infra/.venv/bin/python",
+  "gpu_requested": false,
+  "checks": [
+    {
+      "name": "docs_and_syntax",
+      "status": "PASS",
+      "details": {
+        "documents_checked": 19
+      }
+    },
+    {
+      "name": "w9_archived_evidence",
+      "status": "PASS",
+      "details": {
+        "attention_samples": 180,
+        "vector_samples": 20,
+        "summary_and_trace": "MATCH",
+        "limitations": [
+          "NOT VERIFIED: WDDM debugger interface unavailable; float memcheck not attempted"
+        ]
+      }
+    },
+    {
+      "name": "w10_archived_correctness",
+      "status": "PASS",
+      "details": [
+        {
+          "run": "20261105_020646_816504",
+          "total": 42,
+          "passed": 42,
+          "failed": 0
+        },
+        {
+          "run": "20261105_020838_674190",
+          "total": 34,
+          "passed": 34,
+          "failed": 0
+        },
+        {
+          "run": "20261105_020842_073029",
+          "total": 8,
+          "passed": 8,
+          "failed": 0
+        },
+        {
+          "run": "20261105_021721_544992",
+          "total": 42,
+          "passed": 42,
+          "failed": 0
+        },
+        {
+          "run": "20261115_225210_984586",
+          "total": 48,
+          "passed": 48,
+          "failed": 0
+        },
+        {
+          "run": "20261115_225215_199546",
+          "total": 14,
+          "passed": 14,
+          "failed": 0
+        }
+      ]
+    },
+    {
+      "name": "w11_archived_correctness",
+      "status": "PASS",
+      "details": [
+        {
+          "run": "20261114_235749_487696",
+          "total": 34,
+          "passed": 34,
+          "failed": 0
+        },
+        {
+          "run": "20261115_225218_899297",
+          "total": 34,
+          "passed": 34,
+          "failed": 0
+        }
+      ]
+    },
+    {
+      "name": "w11_archived_benchmarks",
+      "status": "PASS",
+      "details": {
+        "runs": 7,
+        "shape_dtype_conditions": 43,
+        "timing_groups": 387
+      }
+    },
+    {
+      "name": "w11_auditor_tests",
+      "status": "PASS",
+      "details": {
+        "command": [
+          "/home/administrator/ai-infra/.venv/bin/python",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "tests",
+          "-v"
+        ],
+        "cwd": "w11",
+        "log": "w11_auditor_tests.log"
+      }
+    }
+  ],
+  "status": "PASS",
+  "scope": "Offline evidence audit only",
+  "source_sha256": {
+    "w9/src/vector_bench.cu": "71d8868782159a1e22a598c5ce6c8e76fde2239aa9cb3f20008124e734ba82f1",
+    "w9/src/attention.py": "f28ee8cb872bc01cb76049c530c8dc2ceda4ea16a91fb59f3f4d921c889064a5",
+    "w9/src/vector_add.cu": "7b38c10fedd61ca3b5063dbdba59ea7423a87840b3149a2bf6cbd6dc58f72ac7",
+    "w9/scripts/run_all.sh": "1aee6304fc5a0846ca5068ff05cf44c003b96ca5ef49822a958e0ba969552ced",
+    "w9/scripts/plot_results.py": "0fe3c376042f386108a61fbedd54026e4548e22fddae90af012c82a8e002ff34",
+    "w9/scripts/environment.py": "ebfa38f4d4765118c186046cbc31ffaab42d06e4cdb3c0b28abcb6aac5bdbdea",
+    "w9/scripts/profile_attention.py": "90568ecad0bbf3c8f132b6ab7389ae9a5e8f2d5be12f158aac31a56d6931f828",
+    "w9/scripts/summarize.py": "fabbd49476fabfd2b08f2b9a07fc437a6e182b329e19a486bf0f865df01ffb41",
+    "w9/tests/test_attention.py": "301e247238a50226392d243c8ebc7e7c0d97aa94b338ec32f67aac5272efc30c",
+    "w9/benchmarks/attention_bench.py": "df157223896647df678662e8bc692a59d8e653b0ea96d56deccce2ee77741cf0",
+    "w10/src/w10_triton/vector_add.py": "b1fb4b385e8b1274efe5e01ed5d87af5bd8d9e5f520c3ec3bb61119f7a975e6d",
+    "w10/src/w10_triton/__init__.py": "c4e7b140e402b9e16a0b54819ca316f486f55307ec5bab2b9741bb843f74a490",
+    "w10/src/w10_triton/softmax.py": "871386043345a45f973638ef2c234ce92097139e3457ce4f03165ace3ccc2d06",
+    "w10/scripts/run_experiments.py": "61a196d68cb9a9d7a005dd82a4d990e7f781d81b04ade901c9a001dc54a6a933",
+    "w10/tests/correctness.py": "8b0b1b9fc30d68b4385ebab1fcf79371ee8f65bacb01e2e44cf6e56b7f23bfb0",
+    "w11/src/w11_softmax/__init__.py": "6696855a180bef6deb9bd1700cf7902624ffc0ad472dc1fecccd724ffcda0d77",
+    "w11/src/w11_softmax/softmax.py": "871386043345a45f973638ef2c234ce92097139e3457ce4f03165ace3ccc2d06",
+    "w11/scripts/analyze_results.py": "8748dcdb73e102a88f0d66d0b813791317c5aab72735cd5d3a0822ad62b8c734",
+    "w11/scripts/profile_softmax.py": "77096426b436f0e4748f0422ea74cd9f709fe6e63660c908f4c6d7e85b2f315c",
+    "w11/scripts/check_correctness.py": "0ca81f871176c8d683f81a8a73df70a57e74687d9c82f412c679ec2a7f959071",
+    "w11/scripts/benchmark_softmax.py": "469031c6c29b998f848601cb67de007ce41322a4f045a54fd5e5090ee5d9624e",
+    "w11/tests/test_analysis.py": "391aa4f2d3f933f2b79bce3e9d30707a8782274a83c01a1e773ade09f2987da7",
+    "scripts/verify_project.py": "56e618011372f73a663ebe48a1b84ebd6c2fcabfd453506202dc19a83a698ff7",
+    "w9/Makefile": "09a9a8b8acdb7ed9e02572fa67525c75aa6533b6ed8b80411b6583a1f5cb240e"
+  }
+}

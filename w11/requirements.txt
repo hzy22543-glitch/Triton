@@ -1,0 +1,7 @@
+# Verified in the existing WSL Python 3.12 environment.
+# torch CUDA wheels need a compatible wheel source; this is a version record,
+# not a claim that a fresh installation from the default index was verified.
+torch==2.13.0+cu132
+triton==3.7.1
+# matplotlib is optional, used only for analyze_results.py --plots.
+# Verified optional plotting version: matplotlib==3.10.9

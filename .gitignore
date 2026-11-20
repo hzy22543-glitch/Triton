@@ -1,0 +1,27 @@
+# Python environments and caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+
+# Build outputs and local editor state
+build/
+*.o
+*.so
+*.tmp
+*.swp
+.vscode/
+.idea/
+
+# Local profiler exports and GPU failure tensors
+*.sqlite
+*.nsys-rep
+*.ncu-rep
+failure_*.pt
+
+# New local audit logs (selected historical logs are already tracked).
+/reports/checks/

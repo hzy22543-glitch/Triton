@@ -1,0 +1,23 @@
+{
+  "timestamp": "2026-11-20T21:26:58.740981+08:00",
+  "command": [
+    "scripts/diagnose_softmax.py"
+  ],
+  "gpu": "NVIDIA GeForce RTX 4080 Laptop GPU",
+  "l2_bytes": 50331648,
+  "sms": 58,
+  "torch": "2.13.0+cu132",
+  "triton": "3.7.1",
+  "cuda": "13.2",
+  "nodes": 64,
+  "samples": 15,
+  "rotating_pairs": 8,
+  "seed": 42,
+  "dtype": "fp32",
+  "source_sha256": {
+    "diagnose_softmax.py": "614f8067381fcddb853ba5cbac898591a3b1708510229eef701aa7a0d481124d",
+    "benchmark_softmax.py": "469031c6c29b998f848601cb67de007ce41322a4f045a54fd5e5090ee5d9624e",
+    "softmax.py": "871386043345a45f973638ef2c234ce92097139e3457ce4f03165ace3ccc2d06",
+    "__init__.py": "6696855a180bef6deb9bd1700cf7902624ffc0ad472dc1fecccd724ffcda0d77"
+  }
+}

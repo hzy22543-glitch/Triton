@@ -1,0 +1,12 @@
+========= COMPUTE-SANITIZER
+========= Error: Failed to initialize WDDM debugger interface. Please run EnableDebuggerInterface.bat as an administrator
+========= 
+========= Error: Device not supported. Please refer to the "Supported Devices" section of the sanitizer documentation
+========= 
+N=1 PASS
+N=255 PASS
+N=256 PASS
+N=257 PASS
+N=1000 PASS
+N=1025 PASS
+========= ERROR SUMMARY: 2 errors

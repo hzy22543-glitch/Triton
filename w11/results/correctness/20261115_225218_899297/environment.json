@@ -1,0 +1,19 @@
+{
+  "timestamp": "2026-11-15T22:52:18.899297+08:00",
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "platform": "Linux-6.6.114.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "torch": "2.13.0+cu132",
+  "triton": "3.7.1",
+  "cuda": "13.2",
+  "gpu": "NVIDIA GeForce RTX 4080 Laptop GPU",
+  "seed": 42,
+  "command": [
+    "scripts/check_correctness.py"
+  ],
+  "source_sha256": {
+    "check_correctness.py": "0ca81f871176c8d683f81a8a73df70a57e74687d9c82f412c679ec2a7f959071",
+    "benchmark_softmax.py": "469031c6c29b998f848601cb67de007ce41322a4f045a54fd5e5090ee5d9624e",
+    "softmax.py": "871386043345a45f973638ef2c234ce92097139e3457ce4f03165ace3ccc2d06",
+    "__init__.py": "6696855a180bef6deb9bd1700cf7902624ffc0ad472dc1fecccd724ffcda0d77"
+  }
+}

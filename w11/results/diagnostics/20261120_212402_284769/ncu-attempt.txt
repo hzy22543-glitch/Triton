@@ -1,0 +1,31 @@
+==WARNING== Note: Running with uncontrolled GPU caches. Profiling results may be inconsistent.
+==WARNING== Note: Running with unmodified GPU clocks. If not controlled otherwise, profiling results may be inconsistent.
+==PROF== Connected to process 2454 (/usr/bin/python3.12)
+==PROF== Profiling "cunn_SoftMaxForwardReg": 0%....50%....100% - 1 pass
+==PROF== Profiling "softmax_kernel": 0%....50%....100% - 1 pass
+==PROF== Disconnected from process 2454
+[2454] python3.12@127.0.0.1
+  void at::<unnamed>::cunn_SoftMaxForwardReg<float, float, float, at::<unnamed>::SoftMaxForwardEpilogue, long, 4>(T3 *, const T1 *, T5) (1024, 1, 1)x(1024, 1, 1), Context 1, Stream 7, Device 0, CC 8.9
+    Warning: Data collection happened without fixed GPU frequencies. Profiling results may be inconsistent.
+    Section: Command line profiler metrics
+    ------------------------------------------------- ----------- ------------
+    Metric Name                                       Metric Unit Metric Value
+    ------------------------------------------------- ----------- ------------
+    dram__bytes_read.sum                                    Mbyte        17.47
+    dram__bytes_write.sum                                   Kbyte         6.66
+    lts__t_sector_hit_rate.pct                                  %        49.12
+    sm__warps_active.avg.pct_of_peak_sustained_active           %        65.33
+    ------------------------------------------------- ----------- ------------
+
+  softmax_kernel (1024, 1, 1)x(128, 1, 1), Context 1, Stream 7, Device 0, CC 8.9
+    Warning: Data collection happened without fixed GPU frequencies. Profiling results may be inconsistent.
+    Section: Command line profiler metrics
+    ------------------------------------------------- ----------- ------------
+    Metric Name                                       Metric Unit Metric Value
+    ------------------------------------------------- ----------- ------------
+    dram__bytes_read.sum                                    Mbyte        18.74
+    dram__bytes_write.sum                                   Mbyte        10.43
+    lts__t_sector_hit_rate.pct                                  %        47.36
+    sm__warps_active.avg.pct_of_peak_sustained_active           %        69.55
+    ------------------------------------------------- ----------- ------------
+

@@ -1,0 +1,24 @@
+mkdir -p build
+nvcc -O2 -lineinfo -std=c++17 -arch=sm_89 src/vector_add.cu -o build/vector_add_check
+nvcc -O2 -lineinfo -std=c++17 -arch=sm_89 src/vector_bench.cu -o build/vector_bench
+./build/vector_add_check
+N=1 PASS
+N=255 PASS
+N=256 PASS
+N=257 PASS
+N=1000 PASS
+N=1025 PASS
+./build/vector_bench 1000 2 5
+n,round,repeats,warmup,block_size,avg_us,effective_gbps
+1000,1,5,100,256,2.662400,4.507212
+1000,2,5,100,256,2.457600,4.882812
+PYTHONPATH=src /home/administrator/ai-infra/.venv/bin/python -m unittest discover -s tests -v
+Correctness N=1000 PASS (all elements)
+test_equivalence_all_benchmark_shapes (test_attention.AttentionTests.test_equivalence_all_benchmark_shapes) ... ok
+test_future_tokens_do_not_change_prefix (test_attention.AttentionTests.test_future_tokens_do_not_change_prefix) ... ok
+test_independent_cpu_reference (test_attention.AttentionTests.test_independent_cpu_reference) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 1.569s
+
+OK

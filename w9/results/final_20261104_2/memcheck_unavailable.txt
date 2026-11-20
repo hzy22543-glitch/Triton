@@ -1,0 +1,1 @@
+NOT VERIFIED: WDDM debugger interface unavailable; float memcheck not attempted

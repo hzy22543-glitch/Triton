@@ -1,0 +1,3 @@
+mkdir -p build
+nvcc -O2 -lineinfo -std=c++17 -arch=sm_89 src/vector_add.cu -o build/vector_add_check
+nvcc -O2 -lineinfo -std=c++17 -arch=sm_89 src/vector_bench.cu -o build/vector_bench

@@ -1,0 +1,10 @@
+integer outside supported range
+Rejected 0 PASS
+integer outside supported range
+Rejected -1 PASS
+stoll
+Rejected abc PASS
+integer outside supported range
+Rejected 123abc PASS
+integer outside supported range
+Rejected 67108865 PASS

@@ -1,0 +1,16 @@
+PASS vector_add_0                           (0,)           torch.float32
+PASS vector_add_1                           (1,)           torch.float32
+PASS vector_add_10                          (10,)          torch.float32
+PASS vector_add_255                         (255,)         torch.float32
+PASS vector_add_256                         (256,)         torch.float32
+PASS vector_add_257                         (257,)         torch.float32
+PASS vector_add_1000                        (1000,)        torch.float32
+PASS vector_add_4096                        (4096,)        torch.float32
+PASS vector_add_reject_cpu                  (4,)           torch.float32
+PASS vector_add_reject_mixed_device         (4,)           torch.float32
+PASS vector_add_reject_dtype                (4,)           torch.float16
+PASS vector_add_reject_dimension            (2, 2)         torch.float32
+PASS vector_add_reject_shape                (4,)           torch.float32
+PASS vector_add_reject_noncontiguous        (4,)           torch.float32
+{"total": 14, "passed": 14, "failed": 0} 
+Evidence: /home/administrator/ai-infra/cuda_learning/w10/results/runs/20261115_225215_199546

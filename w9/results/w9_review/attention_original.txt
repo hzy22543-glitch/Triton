@@ -1,0 +1,5 @@
+Correctness: PASS
+baseline: 754.432 us
+inplace : 524.061 us
+inplace : 525.834 us
+baseline: 734.073 us

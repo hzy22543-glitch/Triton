@@ -1,0 +1,97 @@
+[
+  {
+    "name": "vector_add_0",
+    "shape": [
+      0
+    ],
+    "dtype": "torch.float32",
+    "kind": "empty",
+    "rtol": 1e-05,
+    "atol": 1e-06,
+    "status": "PASS"
+  },
+  {
+    "name": "vector_add_1",
+    "shape": [
+      1
+    ],
+    "dtype": "torch.float32",
+    "kind": "numerical",
+    "rtol": 1e-05,
+    "atol": 1e-06,
+    "max_abs_error": 0.0,
+    "status": "PASS"
+  },
+  {
+    "name": "vector_add_10",
+    "shape": [
+      10
+    ],
+    "dtype": "torch.float32",
+    "kind": "numerical",
+    "rtol": 1e-05,
+    "atol": 1e-06,
+    "max_abs_error": 0.0,
+    "status": "PASS"
+  },
+  {
+    "name": "vector_add_255",
+    "shape": [
+      255
+    ],
+    "dtype": "torch.float32",
+    "kind": "numerical",
+    "rtol": 1e-05,
+    "atol": 1e-06,
+    "max_abs_error": 0.0,
+    "status": "PASS"
+  },
+  {
+    "name": "vector_add_256",
+    "shape": [
+      256
+    ],
+    "dtype": "torch.float32",
+    "kind": "numerical",
+    "rtol": 1e-05,
+    "atol": 1e-06,
+    "max_abs_error": 0.0,
+    "status": "PASS"
+  },
+  {
+    "name": "vector_add_257",
+    "shape": [
+      257
+    ],
+    "dtype": "torch.float32",
+    "kind": "numerical",
+    "rtol": 1e-05,
+    "atol": 1e-06,
+    "max_abs_error": 0.0,
+    "status": "PASS"
+  },
+  {
+    "name": "vector_add_1000",
+    "shape": [
+      1000
+    ],
+    "dtype": "torch.float32",
+    "kind": "numerical",
+    "rtol": 1e-05,
+    "atol": 1e-06,
+    "max_abs_error": 0.0,
+    "status": "PASS"
+  },
+  {
+    "name": "vector_add_4096",
+    "shape": [
+      4096
+    ],
+    "dtype": "torch.float32",
+    "kind": "numerical",
+    "rtol": 1e-05,
+    "atol": 1e-06,
+    "max_abs_error": 0.0,
+    "status": "PASS"
+  }
+]

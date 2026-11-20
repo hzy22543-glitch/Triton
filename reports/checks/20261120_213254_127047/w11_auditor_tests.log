@@ -1,0 +1,12 @@
+test_changed_raw_timing_is_rejected (test_analysis.EvidenceIntegrityTests.test_changed_raw_timing_is_rejected) ... ok
+test_failed_correctness_is_rejected (test_analysis.EvidenceIntegrityTests.test_failed_correctness_is_rejected) ... ok
+test_missing_timing_group_is_rejected (test_analysis.EvidenceIntegrityTests.test_missing_timing_group_is_rejected) ... ok
+test_modified_source_is_rejected (test_analysis.EvidenceIntegrityTests.test_modified_source_is_rejected) ... ok
+test_real_record_passes (test_analysis.EvidenceIntegrityTests.test_real_record_passes) ... ok
+test_unknown_dtype_is_rejected (test_analysis.EvidenceIntegrityTests.test_unknown_dtype_is_rejected) ... ok
+test_unknown_suite_is_rejected (test_analysis.EvidenceIntegrityTests.test_unknown_suite_is_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.009s
+
+OK

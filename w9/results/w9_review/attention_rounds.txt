@@ -1,0 +1,6 @@
+Correctness: PASS
+Traceback (most recent call last):
+  File "/home/administrator/ai-infra/cuda_learning/w9_cuda/attention_bench.py", line 65, in <module>
+    f"{name} round_us={round(samples,3)} "
+                       ^^^^^^^^^^^^^^^^
+TypeError: type list doesn't define __round__ method

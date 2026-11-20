@@ -1,0 +1,30 @@
+{
+  "timestamp": "2026-11-06T15:35:40.380179+08:00",
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "platform": "Linux-6.6.114.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "torch": "2.13.0+cu132",
+  "triton": "3.7.1",
+  "cuda": "13.2",
+  "gpu": "NVIDIA GeForce RTX 4080 Laptop GPU",
+  "memory_bytes": 12878086144,
+  "capability": [
+    8,
+    9
+  ],
+  "seed": 42,
+  "suite": "softmax",
+  "command": [
+    "/home/administrator/ai-infra/cuda_learning/w10/tests/correctness.py",
+    "--suite",
+    "softmax",
+    "--output-dir",
+    "results/w10_regression"
+  ],
+  "source_sha256": {
+    "src/w10_triton/__init__.py": "c4e7b140e402b9e16a0b54819ca316f486f55307ec5bab2b9741bb843f74a490",
+    "src/w10_triton/softmax.py": "871386043345a45f973638ef2c234ce92097139e3457ce4f03165ace3ccc2d06",
+    "src/w10_triton/vector_add.py": "d04496d57bb9236a394c9ee981315df8bc8c25e94be93c3ff31fb9c698eb4b61",
+    "tests/correctness.py": "d117400763beeaecf98a4db8f7613ac0160e11c7bae18e0af4f7c9bd90518238",
+    "scripts/run_experiments.py": "61a196d68cb9a9d7a005dd82a4d990e7f781d81b04ade901c9a001dc54a6a933"
+  }
+}

@@ -1,0 +1,3 @@
+# Observed working versions. See README before installing a CUDA wheel.
+torch==2.13.0+cu132
+triton==3.7.1

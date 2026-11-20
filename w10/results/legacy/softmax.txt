@@ -1,0 +1,15 @@
+random             | shape=(1, 1)       | max_error=0.000e+00 | PASS
+random             | shape=(2, 3)       | max_error=5.960e-08 | PASS
+random             | shape=(3, 5)       | max_error=2.980e-08 | PASS
+random             | shape=(7, 255)     | max_error=1.490e-08 | PASS
+random             | shape=(7, 256)     | max_error=7.451e-09 | PASS
+random             | shape=(7, 257)     | max_error=1.118e-08 | PASS
+random             | shape=(32, 1000)   | max_error=3.725e-09 | PASS
+random             | shape=(16, 4096)   | max_error=9.313e-10 | PASS
+large_values       | shape=(2, 3)       | max_error=2.980e-08 | PASS
+
+两行示例的 Triton 输出：
+tensor([[0.0900, 0.2447, 0.6652],
+        [0.0900, 0.2447, 0.6652]], device='cuda:0')
+negative_values    | shape=(1, 5)       | max_error=5.960e-08 | PASS
+equal_values       | shape=(2, 5)       | max_error=0.000e+00 | PASS

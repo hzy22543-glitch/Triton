@@ -1,0 +1,10 @@
+/build/
+__pycache__/
+*.pyc
+.venv/
+/archive/**/add
+/archive/**/vector_add
+/archive/**/*.out
+*.sqlite
+*.nsys-rep
+

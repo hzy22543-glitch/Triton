@@ -1,0 +1,33 @@
+2026-11-02T02:30:55+08:00
+Linux w 6.6.114.1-microsoft-standard-WSL2 #1 SMP PREEMPT_DYNAMIC Mon Dec  1 20:46:23 UTC 2025 x86_64 x86_64 x86_64 GNU/Linux
+Mon Nov  2 02:30:55 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 595.71.01              Driver Version: 596.36         CUDA Version: 13.2     |
++-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA GeForce RTX 4080 ...    On  |   00000000:01:00.0  On |                  N/A |
+| N/A   35C    P0             24W /  175W |    2394MiB /  12282MiB |      9%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+nvcc: NVIDIA (R) Cuda compiler driver
+Copyright (c) 2005-2025 NVIDIA Corporation
+Built on Fri_Feb_21_20:23:50_PST_2025
+Cuda compilation tools, release 12.8, V12.8.93
+Build cuda_12.8.r12.8/compiler.35583870_0
+Python: 3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]
+PyTorch: 2.13.0+cu132
+PyTorch CUDA runtime: 13.2
+CUDA available: True
+GPU: NVIDIA GeForce RTX 4080 Laptop GPU
+GPU memory GiB: 11.99365234375

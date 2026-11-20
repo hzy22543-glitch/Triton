@@ -1,0 +1,45 @@
+{
+  "timestamp": "2026-11-05T21:12:49.696700+08:00",
+  "command": [
+    "scripts/benchmark_softmax.py",
+    "--suite",
+    "full",
+    "--dtype",
+    "fp32",
+    "--note",
+    "AI-assisted initial verification; power mode and background workload not controlled; repeat independently before final conclusions"
+  ],
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "executable": "/home/administrator/ai-infra/.venv/bin/python",
+  "platform": "Linux-6.6.114.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "torch": "2.13.0+cu132",
+  "triton": "3.7.1",
+  "cuda_build": "13.2",
+  "gpu": "NVIDIA GeForce RTX 4080 Laptop GPU",
+  "gpu_memory_bytes": 12878086144,
+  "capability": [
+    8,
+    9
+  ],
+  "args": {
+    "suite": "full",
+    "dtype": "fp32",
+    "rounds": 3,
+    "min_run_time": 0.5,
+    "warmup": 25,
+    "seed": 42,
+    "note": "AI-assisted initial verification; power mode and background workload not controlled; repeat independently before final conclusions",
+    "output_dir": "/home/administrator/ai-infra/cuda_learning/w11/results/runs"
+  },
+  "method": "torch.utils.benchmark.Timer.blocked_autorange; synchronized host wall time",
+  "allocation": "all providers allocate outputs inside timed function",
+  "cache": "same resident input reused; no explicit cache flush",
+  "grad": "torch.inference_mode",
+  "num_threads": 1,
+  "profiler": false,
+  "source_sha256": {
+    "benchmark_softmax.py": "57e02e64d8d57287ae8ede8bb048a18ebfd1b4ba957658e38d721c4cca56f8a5",
+    "w10_softmax.py": "9f476331dceedb4b3ba023b45d2798c0ce4dac0de7bf2af2e56298845c7b7195",
+    "w10_init.py": "c4e7b140e402b9e16a0b54819ca316f486f55307ec5bab2b9741bb843f74a490"
+  }
+}

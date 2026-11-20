@@ -1,0 +1,7 @@
+n=    1 | programs= 1 | max_error=0.000e+00 | PASS
+n=   10 | programs= 1 | max_error=0.000e+00 | PASS
+n=  255 | programs= 1 | max_error=0.000e+00 | PASS
+n=  256 | programs= 1 | max_error=0.000e+00 | PASS
+n=  257 | programs= 2 | max_error=0.000e+00 | PASS
+n= 1000 | programs= 4 | max_error=0.000e+00 | PASS
+n= 4096 | programs=16 | max_error=0.000e+00 | PASS
