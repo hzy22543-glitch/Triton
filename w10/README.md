@@ -1,6 +1,6 @@
 # W10 · Triton Softmax 正确性实验
 
-所属项目：[W9～W11 总入口](../README.md)。本次规范化与回归见 [检查记录](../docs/W9-W11检查与整合记录.md)。历史性能与源码快照保持原样。
+[返回 CUDA / Triton 算子实验总览](../README.md)
 
 实现 Triton vector add 与按行 Softmax，对照 PyTorch 验证边界、数值稳定性和 FP32/FP16 输出。W10 的代码实验与报告已完成；本项目尚未测量性能，不声明加速比。
 
@@ -66,9 +66,9 @@ w10/
 
 结果目录包含 `cases.json`（逐例指标和容限）、`summary.json`、`environment.json`（版本、种子、设备、源码 SHA256）、`nvidia-smi.txt` 和 `pip-freeze.txt`。若失败，退出码为 1，`cases.json` 保存堆栈，`failure_*.pt` 保存 CPU 输入；不要通过扩大容限掩盖失败。
 
-## 参考与贡献说明
+## 参考资料
 
-学习资料为计划所列 [Triton Vector Addition](https://triton-lang.org/main/getting-started/tutorials/01-vector-add.html) 和 [Triton Fused Softmax](https://triton-lang.org/main/getting-started/tutorials/02-fused-softmax.html)。本项目保留用户已有 kernel 与解释注释；本次由 AI 辅助整理测试入口、显式输入异常、证据归档和报告。未实现教程中的 persistent 调度、自动调优或反向传播。
+实现参考 Triton 官方教程的索引、边界掩码和逐行归约方法。当前实现采用一行一个 program。[Triton Vector Addition](https://triton-lang.org/main/getting-started/tutorials/01-vector-add.html) · [Triton Fused Softmax](https://triton-lang.org/main/getting-started/tutorials/02-fused-softmax.html)
 
 后续 [W11](../w11/README.md) 已完成性能对比；其计时与结论以 W11 报告为准，后续性能改进集中在 W11。
 

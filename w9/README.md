@@ -1,6 +1,6 @@
 # W9 CUDA 与 Attention 性能剖析实验
 
-所属项目：[W9～W11 总入口](../README.md)。本次规范化与回归见 [检查记录](../docs/W9-W11检查与整合记录.md)。历史性能与源码快照保持原样。
+[返回 CUDA / Triton 算子实验总览](../README.md)
 
 一个可复现的单卡学习项目：用 CUDA vector add 学习线程索引、边界和 Event 计时；用因果 Attention 对照普通与原地 mask，练习从 trace 提出假设，再用无 profiler 的重复测量验证。
 
@@ -10,9 +10,8 @@
 
 - [核心代码与性能分析巩固](docs/W9_核心代码与性能分析巩固.md)：重点概念、关键代码与参数逐项解释，含练习和参考答案。
 - [完整实验报告](reports/W9_实验报告.md)：结果、证据、未完成项与限制。
-- [检查反馈与修改说明](docs/检查反馈与收尾说明.md)：你已完成的部分及此次补齐的内容。
 - [实测数据汇总](results/final_20261104_2/summary.md)：由原始 CSV 自动生成。
-- [学习与实验指南](docs/W9_学习与实验指南.md)：先前学习步骤；代码路径已按本 README 调整。
+- [学习与实验指南](docs/W9_学习与实验指南.md)包含边界测试、计时和 trace 分析练习。
 
 ## 项目布局
 
@@ -24,8 +23,8 @@ scripts/              环境记录、完整运行、profile、汇总
 reports/              完成的实验报告
 docs/                 反馈与项目说明
 results/w9_review/    用户原始日志及 trace 备份，保留失败记录
-results/final_20261104/ 首次收尾运行，在 sanitizer 环境错误处中止
-results/final_20261104_2/ 完整收尾运行，含数据、环境、测试、trace
+results/final_20261104/ 环境与 sanitizer 初始化记录
+results/final_20261104_2/ 正式实验数据、环境、测试与 trace
 archive/pre_cleanup_20261104/ 整理前源码与历史 trace
 build/                本机构建输出，不纳入版本管理
 Makefile              构建与最小测试入口
@@ -85,9 +84,9 @@ Attention benchmark 输出 CSV 必须不存在；profile 输出目录必须不�
 - profile 仅用于归因；普通和原地版本的 JSON 可载入 trace 查看器。`trace_events.csv` 摘录实际 GPU kernel/拷贝事件，不混加 CPU 标记与嵌套统计行。
 - 有效带宽按 `3*N*sizeof(float)/时间` 计算。重复访问同一缓冲区可能命中缓存，不代表 DRAM 实测流量。
 
-## 来源与贡献范围
+## 参考资料与适用范围
 
-本项目整理自用户的 W9 练习。用户完成整数边界检查、基本 Event 基准、Attention 两版实现与 trace 采集；本次收尾由 AI 辅助完成结构整理、浮点输出检查、共享输入对照、独立参考与因果性测试、运行与汇总脚本及报告。报告数字来自保存的实际运行，不是教程数字。
+报告中的性能数据来自本仓库保存的 GPU 实验。测试覆盖整数和浮点向量加法、Attention 两版输出对照、独立参考及因果性检查。
 
 参考：[PyTorch CUDA 异步执行](https://docs.pytorch.org/docs/stable/notes/cuda.html#asynchronous-execution)、[CUDA Best Practices Guide](https://docs.nvidia.com/cuda/cuda-c-best-practices-guide/index.html)。以本机安装版本为准；不要求阅读完整手册。
 

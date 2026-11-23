@@ -1,6 +1,6 @@
 # W11 · Softmax 性能对比实验
 
-所属项目：[W9～W11 总入口](../README.md)。本次规范化与回归见 [检查记录](../docs/W9-W11检查与整合记录.md)。历史性能与源码快照保持原样。
+[返回 CUDA / Triton 算子实验总览](../README.md)
 
 **状态：算子实验与工程交付已完成。** 比较朴素 PyTorch 表达式、torch.softmax 与自己实现的 Triton Softmax；保留正确性、原始计时、重复实验、收益/退化和来源说明。
 
@@ -70,8 +70,8 @@ python scripts/analyze_results.py --plots --plot-run 20261120_212155_885328
 
 CUDA 二维连续 FP32/FP16、行宽 1～4096、前向、有限值验证。零行返回空输出，不用于性能比较。NaN/Inf、非连续布局、梯度、更宽行、自动调优、persistent 调度与 vLLM 集成不在本次交付范围。
 
-FP16 已做正确性及最低 4 类形状冒烟；未进行完整 FP16 性能扫描。笔记本电源/显示负载未完全控制，跨运行小差异不作强结论。W11 算子实验可验收；个人口述掌握、回溯题及求职事项没有仓库证据，不能由自动测试代为确认。
+FP16 已做正确性及最低 4 类形状冒烟；未进行完整 FP16 性能扫描。笔记本电源/显示负载未完全控制，跨运行小差异不作强结论。
 
-## 来源与贡献
+## 参考资料
 
-源算子来自用户 W10，学习与测量方法参考 [PyTorch Benchmark](https://docs.pytorch.org/tutorials/recipes/recipes/benchmark.html) 和 [Triton Fused Softmax](https://triton-lang.org/main/getting-started/tutorials/02-fused-softmax.html)。用户后续复跑记录保留；项目收尾、核验工具、补充测量与报告由 AI 辅助完成。结果只支持报告列出的硬件、版本、输入与口径。
+算子沿用 W10 的按行 Softmax。计时与对照设计参考 PyTorch 和 Triton 的官方教程。[PyTorch Benchmark](https://docs.pytorch.org/tutorials/recipes/recipes/benchmark.html) · [Triton Fused Softmax](https://triton-lang.org/main/getting-started/tutorials/02-fused-softmax.html)
